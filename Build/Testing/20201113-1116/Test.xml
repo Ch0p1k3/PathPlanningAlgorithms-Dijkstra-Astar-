@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20201113-1116-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.17.3"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="DESKTOP-514BLK9"
+	OSRelease=" Professional"
+	OSVersion=" (Build 19041)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString=""
+	VendorID="Unknown Manufacturer"
+	FamilyID="0"
+	ModelID="0"
+	ProcessorCacheSize="0"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="17287"
+	TotalPhysicalMemory="8071"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2592"
+	>
+	<Testing>
+		<StartDateTime>Nov 13 14:16 RTZ 2 ([NON-UTF-8-BYTE-0xE7][NON-UTF-8-BYTE-0xE8][NON-UTF-8-BYTE-0xEC][NON-UTF-8-BYTE-0xE0])</StartDateTime>
+		<StartTestTime>1605266190</StartTestTime>
+		<TestList>
+			<Test>./Tests/Test1</Test>
+			<Test>./Tests/Test2</Test>
+			<Test>./Tests/Test3</Test>
+			<Test>./Tests/Test4</Test>
+			<Test>./Tests/Test6</Test>
+			<Test>./Tests/Test5</Test>
+			<Test>./Tests/Test7</Test>
+			<Test>./Tests/Test8</Test>
+			<Test>./Tests/Test9</Test>
+			<Test>./Tests/Test10</Test>
+			<Test>./Tests/Test11</Test>
+			<Test>./Tests/Test12</Test>
+		</TestList>
+		<Test Status="failed">
+			<Name>Test1</Name>
+			<Path>./Tests</Path>
+			<FullName>./Tests/Test1</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/0_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>4294967295</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0670924</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/0_test.xml"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Error opening XML file!
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Test2</Name>
+			<Path>./Tests</Path>
+			<FullName>./Tests/Test2</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/1_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>4294967295</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0404789</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/1_test.xml"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Error opening XML file!
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Test3</Name>
+			<Path>./Tests</Path>
+			<FullName>./Tests/Test3</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/2_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>4294967295</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0417034</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/2_test.xml"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Error opening XML file!
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Test4</Name>
+			<Path>./Tests</Path>
+			<FullName>./Tests/Test4</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/3_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>4294967295</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0423919</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/3_test.xml"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Error opening XML file!
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Test6</Name>
+			<Path>./Tests</Path>
+			<FullName>./Tests/Test6</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/5_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>4294967295</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0397713</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/5_test.xml"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Error opening XML file!
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Test5</Name>
+			<Path>./Tests</Path>
+			<FullName>./Tests/Test5</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/4_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>4294967295</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0475963</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/4_test.xml"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Error opening XML file!
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Test7</Name>
+			<Path>./Tests</Path>
+			<FullName>./Tests/Test7</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/6_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>4294967295</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0425216</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/6_test.xml"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Error opening XML file!
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Test8</Name>
+			<Path>./Tests</Path>
+			<FullName>./Tests/Test8</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/7_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>4294967295</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.04277</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/7_test.xml"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Error opening XML file!
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Test9</Name>
+			<Path>./Tests</Path>
+			<FullName>./Tests/Test9</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/8_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>4294967295</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0434996</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/8_test.xml"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Error opening XML file!
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Test10</Name>
+			<Path>./Tests</Path>
+			<FullName>./Tests/Test10</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/9_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>4294967295</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0442199</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/9_test.xml"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Error opening XML file!
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Test11</Name>
+			<Path>./Tests</Path>
+			<FullName>./Tests/Test11</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/A_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>4294967295</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0460323</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/A_test.xml"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Error opening XML file!
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Test12</Name>
+			<Path>./Tests</Path>
+			<FullName>./Tests/Test12</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/B_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>4294967295</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.046897</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "../../../TestData/B_test.xml"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Error opening XML file!
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Nov 13 14:16 RTZ 2 ([NON-UTF-8-BYTE-0xE7][NON-UTF-8-BYTE-0xE8][NON-UTF-8-BYTE-0xEC][NON-UTF-8-BYTE-0xE0])</EndDateTime>
+		<EndTestTime>1605266190</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
