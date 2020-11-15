@@ -2,7 +2,7 @@ TARGET = pathplanning
 CONFIG   += console
 CONFIG   -= app_bundle
 TEMPLATE = app
-QMAKE_CXXFLAGS += -std=c++11 -O2 -Wall -Wextra
+QMAKE_CXXFLAGS += -std=c++17 -O2 -Wall -Wextra
 
 win32 {
 QMAKE_LFLAGS += -static -static-libgcc -static-libstdc++
@@ -16,7 +16,7 @@ SOURCES += \
     mission.cpp \
     search.cpp \
     tinyxml2.cpp \
-    xmllogger.cpp 
+    xmllogger.cpp
      
 HEADERS += \
     config.h \
@@ -29,4 +29,7 @@ HEADERS += \
     search.h \
     searchresult.h \
     tinyxml2.h \
-    xmllogger.h
+    xmllogger.h \
+    raw_memory.h \
+    dynamic_array.h \
+    binary_heap.h

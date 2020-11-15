@@ -9,7 +9,10 @@ set(HEADERS         config.h
                     search.h
                     searchresult.h
                     tinyxml2.h
-                    xmllogger.h)
+                    xmllogger.h
+                    raw_memory.h
+                    dynamic_array.h
+                    binary_heap.h)
 
 set(SOURCES         config.cpp
                     environmentoptions.cpp

@@ -6,11 +6,21 @@
 
 #IncludeRegexTransform: 
 
+D:/Projects/PathPlanningAlgorithms/Src/environmentoptions.h
+gl_const.h
 D:/Projects/PathPlanningAlgorithms/Src/gl_const.h
 
-D:/Projects/PathPlanningAlgorithms/Src/map.cpp
+D:/Projects/PathPlanningAlgorithms/Src/gl_const.h
+
+D:/Projects/PathPlanningAlgorithms/Src/ilogger.h
 map.h
 D:/Projects/PathPlanningAlgorithms/Src/map.h
+node.h
+D:/Projects/PathPlanningAlgorithms/Src/node.h
+unordered_map
+-
+list
+-
 
 D:/Projects/PathPlanningAlgorithms/Src/map.h
 iostream
@@ -28,19 +38,35 @@ algorithm
 tinyxml2.h
 D:/Projects/PathPlanningAlgorithms/Src/tinyxml2.h
 
-D:/Projects/PathPlanningAlgorithms/Src/tinyxml2.cpp
-tinyxml2.h
-D:/Projects/PathPlanningAlgorithms/Src/tinyxml2.h
-new
+D:/Projects/PathPlanningAlgorithms/Src/node.h
+
+D:/Projects/PathPlanningAlgorithms/Src/search.cpp
+search.h
+D:/Projects/PathPlanningAlgorithms/Src/search.h
+
+D:/Projects/PathPlanningAlgorithms/Src/search.h
+ilogger.h
+D:/Projects/PathPlanningAlgorithms/Src/ilogger.h
+searchresult.h
+D:/Projects/PathPlanningAlgorithms/Src/searchresult.h
+environmentoptions.h
+D:/Projects/PathPlanningAlgorithms/Src/environmentoptions.h
+list
 -
-stddef.h
+vector
 -
-stdarg.h
+math.h
 -
-cstddef
+limits
 -
-cstdarg
+chrono
 -
+
+D:/Projects/PathPlanningAlgorithms/Src/searchresult.h
+list
+-
+node.h
+D:/Projects/PathPlanningAlgorithms/Src/node.h
 
 D:/Projects/PathPlanningAlgorithms/Src/tinyxml2.h
 ctype.h
