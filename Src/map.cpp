@@ -37,6 +37,11 @@ bool Map::CellOnGrid(int i, int j) const
     return (i < height && i >= 0 && j < width && j >= 0);
 }
 
+bool Map::CellOnGridAndIsTraversable(int i, int j) const
+{
+    return CellOnGrid(i, j) && CellIsTraversable(i, j); 
+}
+
 bool Map::getMap(const char *FileName)
 {
     int rowiter = 0, grid_i = 0, grid_j = 0;
@@ -337,4 +342,14 @@ int Map::getMapWidth() const
 double Map::getCellSize() const
 {
       return cellSize;
+}
+
+Coordinates Map::getStart() const
+{
+    return {start_i, start_j};
+}
+
+Coordinates Map::getGoal() const
+{
+    return {goal_i, goal_j};
 }

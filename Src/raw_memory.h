@@ -5,6 +5,7 @@
 
 // It is a class for a implementation dynamic array
 // It can allocate and dealloace raw memory
+
 template<typename T>
 class RawMemory 
 {

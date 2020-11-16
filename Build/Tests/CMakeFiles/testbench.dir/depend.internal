@@ -3,6 +3,7 @@
 
 Tests/CMakeFiles/testbench.dir/testbench.cpp.obj
  ../Src/config.h
+ ../Src/coordinates.h
  ../Src/environmentoptions.h
  ../Src/gl_const.h
  ../Src/ilogger.h

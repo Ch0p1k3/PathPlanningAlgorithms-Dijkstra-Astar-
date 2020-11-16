@@ -5,7 +5,7 @@
 #include <new>
 #include <utility>
 
-// class DynamicArray
+// It is a dynamic array.
 
 template<typename T>
 class DynamicArray

@@ -10,6 +10,8 @@
 string
 -
 
+../Src/coordinates.h
+
 ../Src/environmentoptions.h
 gl_const.h
 ../Src/gl_const.h
@@ -41,6 +43,8 @@ algorithm
 -
 tinyxml2.h
 ../Src/tinyxml2.h
+coordinates.h
+../Src/coordinates.h
 
 ../Src/mission.h
 map.h
@@ -61,6 +65,8 @@ xmllogger.h
 ../Src/xmllogger.h
 
 ../Src/node.h
+memory
+-
 
 ../Src/search.h
 ilogger.h
@@ -78,6 +84,16 @@ math.h
 limits
 -
 chrono
+-
+set
+-
+optional
+-
+memory
+-
+typeinfo
+-
+algorithm
 -
 
 ../Src/searchresult.h

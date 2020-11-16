@@ -7,6 +7,7 @@
 #include <string>
 #include <algorithm>
 #include "tinyxml2.h"
+#include "coordinates.h"
 
 //That's the class that stores BOTH grid map data AND start-goal locations.
 //getValue reads the input XML and fills the Map object.
@@ -32,14 +33,16 @@ class Map
         ~Map();
 
         bool getMap(const char *FileName);
-        bool CellIsTraversable (int i, int j) const;
-        bool CellOnGrid (int i, int j) const;
+        bool CellIsTraversable(int i, int j) const;
+        bool CellOnGrid(int i, int j) const;
+        bool CellOnGridAndIsTraversable (int i, int j) const;
         bool CellIsObstacle(int i, int j) const;
         int  getValue(int i, int j) const;
         int getMapHeight() const;
         int getMapWidth() const;
         double getCellSize() const;
-
+        Coordinates getStart() const;
+        Coordinates getGoal() const;
 };
 
 #endif

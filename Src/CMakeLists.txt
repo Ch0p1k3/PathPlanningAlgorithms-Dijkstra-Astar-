@@ -12,7 +12,8 @@ set(HEADERS         config.h
                     xmllogger.h
                     raw_memory.h
                     dynamic_array.h
-                    binary_heap.h)
+                    binary_heap.h
+                    coordinates.h)
 
 set(SOURCES         config.cpp
                     environmentoptions.cpp

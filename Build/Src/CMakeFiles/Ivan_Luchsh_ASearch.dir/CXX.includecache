@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+D:/Projects/PathPlanningAlgorithms/Src/config.h
+string
+-
+
+D:/Projects/PathPlanningAlgorithms/Src/coordinates.h
+
 D:/Projects/PathPlanningAlgorithms/Src/environmentoptions.h
 gl_const.h
 D:/Projects/PathPlanningAlgorithms/Src/gl_const.h
@@ -22,6 +28,10 @@ unordered_map
 list
 -
 
+D:/Projects/PathPlanningAlgorithms/Src/main.cpp
+mission.h
+D:/Projects/PathPlanningAlgorithms/Src/mission.h
+
 D:/Projects/PathPlanningAlgorithms/Src/map.h
 iostream
 -
@@ -37,12 +47,36 @@ algorithm
 -
 tinyxml2.h
 D:/Projects/PathPlanningAlgorithms/Src/tinyxml2.h
+coordinates.h
+D:/Projects/PathPlanningAlgorithms/Src/coordinates.h
 
-D:/Projects/PathPlanningAlgorithms/Src/node.h
+D:/Projects/PathPlanningAlgorithms/Src/mission.cpp
+mission.h
+D:/Projects/PathPlanningAlgorithms/Src/mission.h
+iostream
+-
 
-D:/Projects/PathPlanningAlgorithms/Src/search.cpp
+D:/Projects/PathPlanningAlgorithms/Src/mission.h
+map.h
+D:/Projects/PathPlanningAlgorithms/Src/map.h
+config.h
+D:/Projects/PathPlanningAlgorithms/Src/config.h
 search.h
 D:/Projects/PathPlanningAlgorithms/Src/search.h
+ilogger.h
+D:/Projects/PathPlanningAlgorithms/Src/ilogger.h
+searchresult.h
+D:/Projects/PathPlanningAlgorithms/Src/searchresult.h
+environmentoptions.h
+D:/Projects/PathPlanningAlgorithms/Src/environmentoptions.h
+search.h
+D:/Projects/PathPlanningAlgorithms/Src/search.h
+xmllogger.h
+D:/Projects/PathPlanningAlgorithms/Src/xmllogger.h
+
+D:/Projects/PathPlanningAlgorithms/Src/node.h
+memory
+-
 
 D:/Projects/PathPlanningAlgorithms/Src/search.h
 ilogger.h
@@ -60,6 +94,16 @@ math.h
 limits
 -
 chrono
+-
+set
+-
+optional
+-
+memory
+-
+typeinfo
+-
+algorithm
 -
 
 D:/Projects/PathPlanningAlgorithms/Src/searchresult.h
@@ -97,4 +141,16 @@ android/log.h
 -
 assert.h
 -
+
+D:/Projects/PathPlanningAlgorithms/Src/xmllogger.cpp
+xmllogger.h
+D:/Projects/PathPlanningAlgorithms/Src/xmllogger.h
+iostream
+-
+
+D:/Projects/PathPlanningAlgorithms/Src/xmllogger.h
+tinyxml2.h
+D:/Projects/PathPlanningAlgorithms/Src/tinyxml2.h
+ilogger.h
+D:/Projects/PathPlanningAlgorithms/Src/ilogger.h
 
