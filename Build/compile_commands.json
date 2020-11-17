@@ -1,82 +1,82 @@
 [
 {
   "directory": "D:/Projects/PathPlanningAlgorithms/Build/Src",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -g   -o CMakeFiles\\PPLIB.dir\\config.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\config.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -O3 -DNDEBUG   -o CMakeFiles\\PPLIB.dir\\config.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\config.cpp",
   "file": "D:/Projects/PathPlanningAlgorithms/Src/config.cpp"
 },
 {
   "directory": "D:/Projects/PathPlanningAlgorithms/Build/Src",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -g   -o CMakeFiles\\PPLIB.dir\\environmentoptions.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\environmentoptions.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -O3 -DNDEBUG   -o CMakeFiles\\PPLIB.dir\\environmentoptions.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\environmentoptions.cpp",
   "file": "D:/Projects/PathPlanningAlgorithms/Src/environmentoptions.cpp"
 },
 {
   "directory": "D:/Projects/PathPlanningAlgorithms/Build/Src",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -g   -o CMakeFiles\\PPLIB.dir\\map.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\map.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -O3 -DNDEBUG   -o CMakeFiles\\PPLIB.dir\\map.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\map.cpp",
   "file": "D:/Projects/PathPlanningAlgorithms/Src/map.cpp"
 },
 {
   "directory": "D:/Projects/PathPlanningAlgorithms/Build/Src",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -g   -o CMakeFiles\\PPLIB.dir\\mission.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\mission.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -O3 -DNDEBUG   -o CMakeFiles\\PPLIB.dir\\mission.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\mission.cpp",
   "file": "D:/Projects/PathPlanningAlgorithms/Src/mission.cpp"
 },
 {
   "directory": "D:/Projects/PathPlanningAlgorithms/Build/Src",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -g   -o CMakeFiles\\PPLIB.dir\\search.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\search.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -O3 -DNDEBUG   -o CMakeFiles\\PPLIB.dir\\search.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\search.cpp",
   "file": "D:/Projects/PathPlanningAlgorithms/Src/search.cpp"
 },
 {
   "directory": "D:/Projects/PathPlanningAlgorithms/Build/Src",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -g   -o CMakeFiles\\PPLIB.dir\\tinyxml2.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\tinyxml2.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -O3 -DNDEBUG   -o CMakeFiles\\PPLIB.dir\\tinyxml2.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\tinyxml2.cpp",
   "file": "D:/Projects/PathPlanningAlgorithms/Src/tinyxml2.cpp"
 },
 {
   "directory": "D:/Projects/PathPlanningAlgorithms/Build/Src",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -g   -o CMakeFiles\\PPLIB.dir\\xmllogger.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\xmllogger.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -O3 -DNDEBUG   -o CMakeFiles\\PPLIB.dir\\xmllogger.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\xmllogger.cpp",
   "file": "D:/Projects/PathPlanningAlgorithms/Src/xmllogger.cpp"
 },
 {
   "directory": "D:/Projects/PathPlanningAlgorithms/Build/Src",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -g   -o CMakeFiles\\Ivan_Luchsh_ASearch.dir\\config.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\config.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -O3 -DNDEBUG   -o CMakeFiles\\Ivan_Luchsh_ASearch.dir\\config.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\config.cpp",
   "file": "D:/Projects/PathPlanningAlgorithms/Src/config.cpp"
 },
 {
   "directory": "D:/Projects/PathPlanningAlgorithms/Build/Src",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -g   -o CMakeFiles\\Ivan_Luchsh_ASearch.dir\\environmentoptions.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\environmentoptions.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -O3 -DNDEBUG   -o CMakeFiles\\Ivan_Luchsh_ASearch.dir\\environmentoptions.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\environmentoptions.cpp",
   "file": "D:/Projects/PathPlanningAlgorithms/Src/environmentoptions.cpp"
 },
 {
   "directory": "D:/Projects/PathPlanningAlgorithms/Build/Src",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -g   -o CMakeFiles\\Ivan_Luchsh_ASearch.dir\\map.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\map.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -O3 -DNDEBUG   -o CMakeFiles\\Ivan_Luchsh_ASearch.dir\\map.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\map.cpp",
   "file": "D:/Projects/PathPlanningAlgorithms/Src/map.cpp"
 },
 {
   "directory": "D:/Projects/PathPlanningAlgorithms/Build/Src",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -g   -o CMakeFiles\\Ivan_Luchsh_ASearch.dir\\mission.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\mission.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -O3 -DNDEBUG   -o CMakeFiles\\Ivan_Luchsh_ASearch.dir\\mission.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\mission.cpp",
   "file": "D:/Projects/PathPlanningAlgorithms/Src/mission.cpp"
 },
 {
   "directory": "D:/Projects/PathPlanningAlgorithms/Build/Src",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -g   -o CMakeFiles\\Ivan_Luchsh_ASearch.dir\\search.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\search.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -O3 -DNDEBUG   -o CMakeFiles\\Ivan_Luchsh_ASearch.dir\\search.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\search.cpp",
   "file": "D:/Projects/PathPlanningAlgorithms/Src/search.cpp"
 },
 {
   "directory": "D:/Projects/PathPlanningAlgorithms/Build/Src",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -g   -o CMakeFiles\\Ivan_Luchsh_ASearch.dir\\tinyxml2.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\tinyxml2.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -O3 -DNDEBUG   -o CMakeFiles\\Ivan_Luchsh_ASearch.dir\\tinyxml2.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\tinyxml2.cpp",
   "file": "D:/Projects/PathPlanningAlgorithms/Src/tinyxml2.cpp"
 },
 {
   "directory": "D:/Projects/PathPlanningAlgorithms/Build/Src",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -g   -o CMakeFiles\\Ivan_Luchsh_ASearch.dir\\xmllogger.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\xmllogger.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -O3 -DNDEBUG   -o CMakeFiles\\Ivan_Luchsh_ASearch.dir\\xmllogger.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\xmllogger.cpp",
   "file": "D:/Projects/PathPlanningAlgorithms/Src/xmllogger.cpp"
 },
 {
   "directory": "D:/Projects/PathPlanningAlgorithms/Build/Src",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -g   -o CMakeFiles\\Ivan_Luchsh_ASearch.dir\\main.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\main.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe     -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -O3 -DNDEBUG   -o CMakeFiles\\Ivan_Luchsh_ASearch.dir\\main.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Src\\main.cpp",
   "file": "D:/Projects/PathPlanningAlgorithms/Src/main.cpp"
 },
 {
-  "directory": "D:/Projects/PathPlanningAlgorithms/Build/Build/Tests",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   @CMakeFiles/testbench.dir/includes_CXX.rsp  -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -g   -o CMakeFiles\\testbench.dir\\testbench.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Build\\Tests\\testbench.cpp",
-  "file": "D:/Projects/PathPlanningAlgorithms/Build/Tests/testbench.cpp"
+  "directory": "D:/Projects/PathPlanningAlgorithms/Build/Tests",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   @CMakeFiles/testbench.dir/includes_CXX.rsp  -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -O3 -DNDEBUG   -o CMakeFiles\\testbench.dir\\testbench.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Tests\\testbench.cpp",
+  "file": "D:/Projects/PathPlanningAlgorithms/Tests/testbench.cpp"
 }
 ]

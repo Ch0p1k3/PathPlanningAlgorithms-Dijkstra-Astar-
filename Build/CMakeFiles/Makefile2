@@ -73,67 +73,21 @@ CMAKE_BINARY_DIR = D:\Projects\PathPlanningAlgorithms\Build
 
 # The main recursive "all" target.
 all: Src/all
-all: Build/Tests/all
+all: Tests/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: Src/preinstall
-preinstall: Build/Tests/preinstall
+preinstall: Tests/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: Src/clean
-clean: Build/Tests/clean
+clean: Tests/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory Build/Tests
-
-# Recursive "all" directory target.
-Build/Tests/all: Build/Tests/CMakeFiles/testbench.dir/all
-
-.PHONY : Build/Tests/all
-
-# Recursive "preinstall" directory target.
-Build/Tests/preinstall:
-
-.PHONY : Build/Tests/preinstall
-
-# Recursive "clean" directory target.
-Build/Tests/clean: Build/Tests/CMakeFiles/NightlyMemCheck.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/NightlyTest.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/ContinuousConfigure.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/NightlyConfigure.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/NightlyMemoryCheck.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/ExperimentalTest.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/ContinuousUpdate.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/NightlyUpdate.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/ExperimentalMemCheck.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/ExperimentalSubmit.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/Experimental.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/ContinuousCoverage.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/ExperimentalConfigure.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/Continuous.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/Nightly.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/NightlySubmit.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/NightlyStart.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/ExperimentalCoverage.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/NightlyCoverage.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/ContinuousBuild.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/testbench.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/ExperimentalStart.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/NightlyBuild.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/ExperimentalBuild.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/ExperimentalUpdate.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/ContinuousStart.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/ContinuousMemCheck.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/ContinuousTest.dir/clean
-Build/Tests/clean: Build/Tests/CMakeFiles/ContinuousSubmit.dir/clean
-
-.PHONY : Build/Tests/clean
 
 #=============================================================================
 # Directory level rules for directory Src
@@ -154,6 +108,52 @@ Src/clean: Src/CMakeFiles/PPLIB.dir/clean
 Src/clean: Src/CMakeFiles/Ivan_Luchsh_ASearch.dir/clean
 
 .PHONY : Src/clean
+
+#=============================================================================
+# Directory level rules for directory Tests
+
+# Recursive "all" directory target.
+Tests/all: Tests/CMakeFiles/testbench.dir/all
+
+.PHONY : Tests/all
+
+# Recursive "preinstall" directory target.
+Tests/preinstall:
+
+.PHONY : Tests/preinstall
+
+# Recursive "clean" directory target.
+Tests/clean: Tests/CMakeFiles/NightlyMemCheck.dir/clean
+Tests/clean: Tests/CMakeFiles/NightlyTest.dir/clean
+Tests/clean: Tests/CMakeFiles/ContinuousConfigure.dir/clean
+Tests/clean: Tests/CMakeFiles/NightlyConfigure.dir/clean
+Tests/clean: Tests/CMakeFiles/NightlyMemoryCheck.dir/clean
+Tests/clean: Tests/CMakeFiles/ExperimentalTest.dir/clean
+Tests/clean: Tests/CMakeFiles/ContinuousUpdate.dir/clean
+Tests/clean: Tests/CMakeFiles/NightlyUpdate.dir/clean
+Tests/clean: Tests/CMakeFiles/ExperimentalMemCheck.dir/clean
+Tests/clean: Tests/CMakeFiles/ExperimentalSubmit.dir/clean
+Tests/clean: Tests/CMakeFiles/Experimental.dir/clean
+Tests/clean: Tests/CMakeFiles/ContinuousCoverage.dir/clean
+Tests/clean: Tests/CMakeFiles/ExperimentalConfigure.dir/clean
+Tests/clean: Tests/CMakeFiles/Continuous.dir/clean
+Tests/clean: Tests/CMakeFiles/Nightly.dir/clean
+Tests/clean: Tests/CMakeFiles/NightlySubmit.dir/clean
+Tests/clean: Tests/CMakeFiles/NightlyStart.dir/clean
+Tests/clean: Tests/CMakeFiles/ExperimentalCoverage.dir/clean
+Tests/clean: Tests/CMakeFiles/NightlyCoverage.dir/clean
+Tests/clean: Tests/CMakeFiles/ContinuousBuild.dir/clean
+Tests/clean: Tests/CMakeFiles/testbench.dir/clean
+Tests/clean: Tests/CMakeFiles/ExperimentalStart.dir/clean
+Tests/clean: Tests/CMakeFiles/NightlyBuild.dir/clean
+Tests/clean: Tests/CMakeFiles/ExperimentalBuild.dir/clean
+Tests/clean: Tests/CMakeFiles/ExperimentalUpdate.dir/clean
+Tests/clean: Tests/CMakeFiles/ContinuousStart.dir/clean
+Tests/clean: Tests/CMakeFiles/ContinuousMemCheck.dir/clean
+Tests/clean: Tests/CMakeFiles/ContinuousTest.dir/clean
+Tests/clean: Tests/CMakeFiles/ContinuousSubmit.dir/clean
+
+.PHONY : Tests/clean
 
 #=============================================================================
 # Target rules for target Src/CMakeFiles/PPLIB.dir
@@ -210,787 +210,787 @@ Src/CMakeFiles/Ivan_Luchsh_ASearch.dir/clean:
 .PHONY : Src/CMakeFiles/Ivan_Luchsh_ASearch.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/NightlyMemCheck.dir
+# Target rules for target Tests/CMakeFiles/NightlyMemCheck.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/NightlyMemCheck.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyMemCheck.dir\build.make Build/Tests/CMakeFiles/NightlyMemCheck.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyMemCheck.dir\build.make Build/Tests/CMakeFiles/NightlyMemCheck.dir/build
+Tests/CMakeFiles/NightlyMemCheck.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyMemCheck.dir\build.make Tests/CMakeFiles/NightlyMemCheck.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyMemCheck.dir\build.make Tests/CMakeFiles/NightlyMemCheck.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target NightlyMemCheck"
-.PHONY : Build/Tests/CMakeFiles/NightlyMemCheck.dir/all
+.PHONY : Tests/CMakeFiles/NightlyMemCheck.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/NightlyMemCheck.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/NightlyMemCheck.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/NightlyMemCheck.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/NightlyMemCheck.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/NightlyMemCheck.dir/rule
+.PHONY : Tests/CMakeFiles/NightlyMemCheck.dir/rule
 
 # Convenience name for target.
-NightlyMemCheck: Build/Tests/CMakeFiles/NightlyMemCheck.dir/rule
+NightlyMemCheck: Tests/CMakeFiles/NightlyMemCheck.dir/rule
 
 .PHONY : NightlyMemCheck
 
 # clean rule for target.
-Build/Tests/CMakeFiles/NightlyMemCheck.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyMemCheck.dir\build.make Build/Tests/CMakeFiles/NightlyMemCheck.dir/clean
-.PHONY : Build/Tests/CMakeFiles/NightlyMemCheck.dir/clean
+Tests/CMakeFiles/NightlyMemCheck.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyMemCheck.dir\build.make Tests/CMakeFiles/NightlyMemCheck.dir/clean
+.PHONY : Tests/CMakeFiles/NightlyMemCheck.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/NightlyTest.dir
+# Target rules for target Tests/CMakeFiles/NightlyTest.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/NightlyTest.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyTest.dir\build.make Build/Tests/CMakeFiles/NightlyTest.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyTest.dir\build.make Build/Tests/CMakeFiles/NightlyTest.dir/build
+Tests/CMakeFiles/NightlyTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyTest.dir\build.make Tests/CMakeFiles/NightlyTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyTest.dir\build.make Tests/CMakeFiles/NightlyTest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target NightlyTest"
-.PHONY : Build/Tests/CMakeFiles/NightlyTest.dir/all
+.PHONY : Tests/CMakeFiles/NightlyTest.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/NightlyTest.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/NightlyTest.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/NightlyTest.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/NightlyTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/NightlyTest.dir/rule
+.PHONY : Tests/CMakeFiles/NightlyTest.dir/rule
 
 # Convenience name for target.
-NightlyTest: Build/Tests/CMakeFiles/NightlyTest.dir/rule
+NightlyTest: Tests/CMakeFiles/NightlyTest.dir/rule
 
 .PHONY : NightlyTest
 
 # clean rule for target.
-Build/Tests/CMakeFiles/NightlyTest.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyTest.dir\build.make Build/Tests/CMakeFiles/NightlyTest.dir/clean
-.PHONY : Build/Tests/CMakeFiles/NightlyTest.dir/clean
+Tests/CMakeFiles/NightlyTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyTest.dir\build.make Tests/CMakeFiles/NightlyTest.dir/clean
+.PHONY : Tests/CMakeFiles/NightlyTest.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/ContinuousConfigure.dir
+# Target rules for target Tests/CMakeFiles/ContinuousConfigure.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/ContinuousConfigure.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousConfigure.dir\build.make Build/Tests/CMakeFiles/ContinuousConfigure.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousConfigure.dir\build.make Build/Tests/CMakeFiles/ContinuousConfigure.dir/build
+Tests/CMakeFiles/ContinuousConfigure.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousConfigure.dir\build.make Tests/CMakeFiles/ContinuousConfigure.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousConfigure.dir\build.make Tests/CMakeFiles/ContinuousConfigure.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target ContinuousConfigure"
-.PHONY : Build/Tests/CMakeFiles/ContinuousConfigure.dir/all
+.PHONY : Tests/CMakeFiles/ContinuousConfigure.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/ContinuousConfigure.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/ContinuousConfigure.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/ContinuousConfigure.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/ContinuousConfigure.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/ContinuousConfigure.dir/rule
+.PHONY : Tests/CMakeFiles/ContinuousConfigure.dir/rule
 
 # Convenience name for target.
-ContinuousConfigure: Build/Tests/CMakeFiles/ContinuousConfigure.dir/rule
+ContinuousConfigure: Tests/CMakeFiles/ContinuousConfigure.dir/rule
 
 .PHONY : ContinuousConfigure
 
 # clean rule for target.
-Build/Tests/CMakeFiles/ContinuousConfigure.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousConfigure.dir\build.make Build/Tests/CMakeFiles/ContinuousConfigure.dir/clean
-.PHONY : Build/Tests/CMakeFiles/ContinuousConfigure.dir/clean
+Tests/CMakeFiles/ContinuousConfigure.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousConfigure.dir\build.make Tests/CMakeFiles/ContinuousConfigure.dir/clean
+.PHONY : Tests/CMakeFiles/ContinuousConfigure.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/NightlyConfigure.dir
+# Target rules for target Tests/CMakeFiles/NightlyConfigure.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/NightlyConfigure.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyConfigure.dir\build.make Build/Tests/CMakeFiles/NightlyConfigure.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyConfigure.dir\build.make Build/Tests/CMakeFiles/NightlyConfigure.dir/build
+Tests/CMakeFiles/NightlyConfigure.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyConfigure.dir\build.make Tests/CMakeFiles/NightlyConfigure.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyConfigure.dir\build.make Tests/CMakeFiles/NightlyConfigure.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target NightlyConfigure"
-.PHONY : Build/Tests/CMakeFiles/NightlyConfigure.dir/all
+.PHONY : Tests/CMakeFiles/NightlyConfigure.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/NightlyConfigure.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/NightlyConfigure.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/NightlyConfigure.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/NightlyConfigure.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/NightlyConfigure.dir/rule
+.PHONY : Tests/CMakeFiles/NightlyConfigure.dir/rule
 
 # Convenience name for target.
-NightlyConfigure: Build/Tests/CMakeFiles/NightlyConfigure.dir/rule
+NightlyConfigure: Tests/CMakeFiles/NightlyConfigure.dir/rule
 
 .PHONY : NightlyConfigure
 
 # clean rule for target.
-Build/Tests/CMakeFiles/NightlyConfigure.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyConfigure.dir\build.make Build/Tests/CMakeFiles/NightlyConfigure.dir/clean
-.PHONY : Build/Tests/CMakeFiles/NightlyConfigure.dir/clean
+Tests/CMakeFiles/NightlyConfigure.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyConfigure.dir\build.make Tests/CMakeFiles/NightlyConfigure.dir/clean
+.PHONY : Tests/CMakeFiles/NightlyConfigure.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/NightlyMemoryCheck.dir
+# Target rules for target Tests/CMakeFiles/NightlyMemoryCheck.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/NightlyMemoryCheck.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyMemoryCheck.dir\build.make Build/Tests/CMakeFiles/NightlyMemoryCheck.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyMemoryCheck.dir\build.make Build/Tests/CMakeFiles/NightlyMemoryCheck.dir/build
+Tests/CMakeFiles/NightlyMemoryCheck.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyMemoryCheck.dir\build.make Tests/CMakeFiles/NightlyMemoryCheck.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyMemoryCheck.dir\build.make Tests/CMakeFiles/NightlyMemoryCheck.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target NightlyMemoryCheck"
-.PHONY : Build/Tests/CMakeFiles/NightlyMemoryCheck.dir/all
+.PHONY : Tests/CMakeFiles/NightlyMemoryCheck.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/NightlyMemoryCheck.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/NightlyMemoryCheck.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/NightlyMemoryCheck.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/NightlyMemoryCheck.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/NightlyMemoryCheck.dir/rule
+.PHONY : Tests/CMakeFiles/NightlyMemoryCheck.dir/rule
 
 # Convenience name for target.
-NightlyMemoryCheck: Build/Tests/CMakeFiles/NightlyMemoryCheck.dir/rule
+NightlyMemoryCheck: Tests/CMakeFiles/NightlyMemoryCheck.dir/rule
 
 .PHONY : NightlyMemoryCheck
 
 # clean rule for target.
-Build/Tests/CMakeFiles/NightlyMemoryCheck.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyMemoryCheck.dir\build.make Build/Tests/CMakeFiles/NightlyMemoryCheck.dir/clean
-.PHONY : Build/Tests/CMakeFiles/NightlyMemoryCheck.dir/clean
+Tests/CMakeFiles/NightlyMemoryCheck.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyMemoryCheck.dir\build.make Tests/CMakeFiles/NightlyMemoryCheck.dir/clean
+.PHONY : Tests/CMakeFiles/NightlyMemoryCheck.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/ExperimentalTest.dir
+# Target rules for target Tests/CMakeFiles/ExperimentalTest.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/ExperimentalTest.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalTest.dir\build.make Build/Tests/CMakeFiles/ExperimentalTest.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalTest.dir\build.make Build/Tests/CMakeFiles/ExperimentalTest.dir/build
+Tests/CMakeFiles/ExperimentalTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalTest.dir\build.make Tests/CMakeFiles/ExperimentalTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalTest.dir\build.make Tests/CMakeFiles/ExperimentalTest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target ExperimentalTest"
-.PHONY : Build/Tests/CMakeFiles/ExperimentalTest.dir/all
+.PHONY : Tests/CMakeFiles/ExperimentalTest.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/ExperimentalTest.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/ExperimentalTest.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/ExperimentalTest.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/ExperimentalTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/ExperimentalTest.dir/rule
+.PHONY : Tests/CMakeFiles/ExperimentalTest.dir/rule
 
 # Convenience name for target.
-ExperimentalTest: Build/Tests/CMakeFiles/ExperimentalTest.dir/rule
+ExperimentalTest: Tests/CMakeFiles/ExperimentalTest.dir/rule
 
 .PHONY : ExperimentalTest
 
 # clean rule for target.
-Build/Tests/CMakeFiles/ExperimentalTest.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalTest.dir\build.make Build/Tests/CMakeFiles/ExperimentalTest.dir/clean
-.PHONY : Build/Tests/CMakeFiles/ExperimentalTest.dir/clean
+Tests/CMakeFiles/ExperimentalTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalTest.dir\build.make Tests/CMakeFiles/ExperimentalTest.dir/clean
+.PHONY : Tests/CMakeFiles/ExperimentalTest.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/ContinuousUpdate.dir
+# Target rules for target Tests/CMakeFiles/ContinuousUpdate.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/ContinuousUpdate.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousUpdate.dir\build.make Build/Tests/CMakeFiles/ContinuousUpdate.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousUpdate.dir\build.make Build/Tests/CMakeFiles/ContinuousUpdate.dir/build
+Tests/CMakeFiles/ContinuousUpdate.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousUpdate.dir\build.make Tests/CMakeFiles/ContinuousUpdate.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousUpdate.dir\build.make Tests/CMakeFiles/ContinuousUpdate.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target ContinuousUpdate"
-.PHONY : Build/Tests/CMakeFiles/ContinuousUpdate.dir/all
+.PHONY : Tests/CMakeFiles/ContinuousUpdate.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/ContinuousUpdate.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/ContinuousUpdate.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/ContinuousUpdate.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/ContinuousUpdate.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/ContinuousUpdate.dir/rule
+.PHONY : Tests/CMakeFiles/ContinuousUpdate.dir/rule
 
 # Convenience name for target.
-ContinuousUpdate: Build/Tests/CMakeFiles/ContinuousUpdate.dir/rule
+ContinuousUpdate: Tests/CMakeFiles/ContinuousUpdate.dir/rule
 
 .PHONY : ContinuousUpdate
 
 # clean rule for target.
-Build/Tests/CMakeFiles/ContinuousUpdate.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousUpdate.dir\build.make Build/Tests/CMakeFiles/ContinuousUpdate.dir/clean
-.PHONY : Build/Tests/CMakeFiles/ContinuousUpdate.dir/clean
+Tests/CMakeFiles/ContinuousUpdate.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousUpdate.dir\build.make Tests/CMakeFiles/ContinuousUpdate.dir/clean
+.PHONY : Tests/CMakeFiles/ContinuousUpdate.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/NightlyUpdate.dir
+# Target rules for target Tests/CMakeFiles/NightlyUpdate.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/NightlyUpdate.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyUpdate.dir\build.make Build/Tests/CMakeFiles/NightlyUpdate.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyUpdate.dir\build.make Build/Tests/CMakeFiles/NightlyUpdate.dir/build
+Tests/CMakeFiles/NightlyUpdate.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyUpdate.dir\build.make Tests/CMakeFiles/NightlyUpdate.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyUpdate.dir\build.make Tests/CMakeFiles/NightlyUpdate.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target NightlyUpdate"
-.PHONY : Build/Tests/CMakeFiles/NightlyUpdate.dir/all
+.PHONY : Tests/CMakeFiles/NightlyUpdate.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/NightlyUpdate.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/NightlyUpdate.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/NightlyUpdate.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/NightlyUpdate.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/NightlyUpdate.dir/rule
+.PHONY : Tests/CMakeFiles/NightlyUpdate.dir/rule
 
 # Convenience name for target.
-NightlyUpdate: Build/Tests/CMakeFiles/NightlyUpdate.dir/rule
+NightlyUpdate: Tests/CMakeFiles/NightlyUpdate.dir/rule
 
 .PHONY : NightlyUpdate
 
 # clean rule for target.
-Build/Tests/CMakeFiles/NightlyUpdate.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyUpdate.dir\build.make Build/Tests/CMakeFiles/NightlyUpdate.dir/clean
-.PHONY : Build/Tests/CMakeFiles/NightlyUpdate.dir/clean
+Tests/CMakeFiles/NightlyUpdate.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyUpdate.dir\build.make Tests/CMakeFiles/NightlyUpdate.dir/clean
+.PHONY : Tests/CMakeFiles/NightlyUpdate.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/ExperimentalMemCheck.dir
+# Target rules for target Tests/CMakeFiles/ExperimentalMemCheck.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/ExperimentalMemCheck.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalMemCheck.dir\build.make Build/Tests/CMakeFiles/ExperimentalMemCheck.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalMemCheck.dir\build.make Build/Tests/CMakeFiles/ExperimentalMemCheck.dir/build
+Tests/CMakeFiles/ExperimentalMemCheck.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalMemCheck.dir\build.make Tests/CMakeFiles/ExperimentalMemCheck.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalMemCheck.dir\build.make Tests/CMakeFiles/ExperimentalMemCheck.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target ExperimentalMemCheck"
-.PHONY : Build/Tests/CMakeFiles/ExperimentalMemCheck.dir/all
+.PHONY : Tests/CMakeFiles/ExperimentalMemCheck.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/ExperimentalMemCheck.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/ExperimentalMemCheck.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/ExperimentalMemCheck.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/ExperimentalMemCheck.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/ExperimentalMemCheck.dir/rule
+.PHONY : Tests/CMakeFiles/ExperimentalMemCheck.dir/rule
 
 # Convenience name for target.
-ExperimentalMemCheck: Build/Tests/CMakeFiles/ExperimentalMemCheck.dir/rule
+ExperimentalMemCheck: Tests/CMakeFiles/ExperimentalMemCheck.dir/rule
 
 .PHONY : ExperimentalMemCheck
 
 # clean rule for target.
-Build/Tests/CMakeFiles/ExperimentalMemCheck.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalMemCheck.dir\build.make Build/Tests/CMakeFiles/ExperimentalMemCheck.dir/clean
-.PHONY : Build/Tests/CMakeFiles/ExperimentalMemCheck.dir/clean
+Tests/CMakeFiles/ExperimentalMemCheck.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalMemCheck.dir\build.make Tests/CMakeFiles/ExperimentalMemCheck.dir/clean
+.PHONY : Tests/CMakeFiles/ExperimentalMemCheck.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/ExperimentalSubmit.dir
+# Target rules for target Tests/CMakeFiles/ExperimentalSubmit.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/ExperimentalSubmit.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalSubmit.dir\build.make Build/Tests/CMakeFiles/ExperimentalSubmit.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalSubmit.dir\build.make Build/Tests/CMakeFiles/ExperimentalSubmit.dir/build
+Tests/CMakeFiles/ExperimentalSubmit.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalSubmit.dir\build.make Tests/CMakeFiles/ExperimentalSubmit.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalSubmit.dir\build.make Tests/CMakeFiles/ExperimentalSubmit.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target ExperimentalSubmit"
-.PHONY : Build/Tests/CMakeFiles/ExperimentalSubmit.dir/all
+.PHONY : Tests/CMakeFiles/ExperimentalSubmit.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/ExperimentalSubmit.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/ExperimentalSubmit.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/ExperimentalSubmit.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/ExperimentalSubmit.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/ExperimentalSubmit.dir/rule
+.PHONY : Tests/CMakeFiles/ExperimentalSubmit.dir/rule
 
 # Convenience name for target.
-ExperimentalSubmit: Build/Tests/CMakeFiles/ExperimentalSubmit.dir/rule
+ExperimentalSubmit: Tests/CMakeFiles/ExperimentalSubmit.dir/rule
 
 .PHONY : ExperimentalSubmit
 
 # clean rule for target.
-Build/Tests/CMakeFiles/ExperimentalSubmit.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalSubmit.dir\build.make Build/Tests/CMakeFiles/ExperimentalSubmit.dir/clean
-.PHONY : Build/Tests/CMakeFiles/ExperimentalSubmit.dir/clean
+Tests/CMakeFiles/ExperimentalSubmit.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalSubmit.dir\build.make Tests/CMakeFiles/ExperimentalSubmit.dir/clean
+.PHONY : Tests/CMakeFiles/ExperimentalSubmit.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/Experimental.dir
+# Target rules for target Tests/CMakeFiles/Experimental.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/Experimental.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\Experimental.dir\build.make Build/Tests/CMakeFiles/Experimental.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\Experimental.dir\build.make Build/Tests/CMakeFiles/Experimental.dir/build
+Tests/CMakeFiles/Experimental.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\Experimental.dir\build.make Tests/CMakeFiles/Experimental.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\Experimental.dir\build.make Tests/CMakeFiles/Experimental.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target Experimental"
-.PHONY : Build/Tests/CMakeFiles/Experimental.dir/all
+.PHONY : Tests/CMakeFiles/Experimental.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/Experimental.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/Experimental.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/Experimental.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/Experimental.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/Experimental.dir/rule
+.PHONY : Tests/CMakeFiles/Experimental.dir/rule
 
 # Convenience name for target.
-Experimental: Build/Tests/CMakeFiles/Experimental.dir/rule
+Experimental: Tests/CMakeFiles/Experimental.dir/rule
 
 .PHONY : Experimental
 
 # clean rule for target.
-Build/Tests/CMakeFiles/Experimental.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\Experimental.dir\build.make Build/Tests/CMakeFiles/Experimental.dir/clean
-.PHONY : Build/Tests/CMakeFiles/Experimental.dir/clean
+Tests/CMakeFiles/Experimental.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\Experimental.dir\build.make Tests/CMakeFiles/Experimental.dir/clean
+.PHONY : Tests/CMakeFiles/Experimental.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/ContinuousCoverage.dir
+# Target rules for target Tests/CMakeFiles/ContinuousCoverage.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/ContinuousCoverage.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousCoverage.dir\build.make Build/Tests/CMakeFiles/ContinuousCoverage.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousCoverage.dir\build.make Build/Tests/CMakeFiles/ContinuousCoverage.dir/build
+Tests/CMakeFiles/ContinuousCoverage.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousCoverage.dir\build.make Tests/CMakeFiles/ContinuousCoverage.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousCoverage.dir\build.make Tests/CMakeFiles/ContinuousCoverage.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target ContinuousCoverage"
-.PHONY : Build/Tests/CMakeFiles/ContinuousCoverage.dir/all
+.PHONY : Tests/CMakeFiles/ContinuousCoverage.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/ContinuousCoverage.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/ContinuousCoverage.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/ContinuousCoverage.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/ContinuousCoverage.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/ContinuousCoverage.dir/rule
+.PHONY : Tests/CMakeFiles/ContinuousCoverage.dir/rule
 
 # Convenience name for target.
-ContinuousCoverage: Build/Tests/CMakeFiles/ContinuousCoverage.dir/rule
+ContinuousCoverage: Tests/CMakeFiles/ContinuousCoverage.dir/rule
 
 .PHONY : ContinuousCoverage
 
 # clean rule for target.
-Build/Tests/CMakeFiles/ContinuousCoverage.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousCoverage.dir\build.make Build/Tests/CMakeFiles/ContinuousCoverage.dir/clean
-.PHONY : Build/Tests/CMakeFiles/ContinuousCoverage.dir/clean
+Tests/CMakeFiles/ContinuousCoverage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousCoverage.dir\build.make Tests/CMakeFiles/ContinuousCoverage.dir/clean
+.PHONY : Tests/CMakeFiles/ContinuousCoverage.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/ExperimentalConfigure.dir
+# Target rules for target Tests/CMakeFiles/ExperimentalConfigure.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/ExperimentalConfigure.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalConfigure.dir\build.make Build/Tests/CMakeFiles/ExperimentalConfigure.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalConfigure.dir\build.make Build/Tests/CMakeFiles/ExperimentalConfigure.dir/build
+Tests/CMakeFiles/ExperimentalConfigure.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalConfigure.dir\build.make Tests/CMakeFiles/ExperimentalConfigure.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalConfigure.dir\build.make Tests/CMakeFiles/ExperimentalConfigure.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target ExperimentalConfigure"
-.PHONY : Build/Tests/CMakeFiles/ExperimentalConfigure.dir/all
+.PHONY : Tests/CMakeFiles/ExperimentalConfigure.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/ExperimentalConfigure.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/ExperimentalConfigure.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/ExperimentalConfigure.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/ExperimentalConfigure.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/ExperimentalConfigure.dir/rule
+.PHONY : Tests/CMakeFiles/ExperimentalConfigure.dir/rule
 
 # Convenience name for target.
-ExperimentalConfigure: Build/Tests/CMakeFiles/ExperimentalConfigure.dir/rule
+ExperimentalConfigure: Tests/CMakeFiles/ExperimentalConfigure.dir/rule
 
 .PHONY : ExperimentalConfigure
 
 # clean rule for target.
-Build/Tests/CMakeFiles/ExperimentalConfigure.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalConfigure.dir\build.make Build/Tests/CMakeFiles/ExperimentalConfigure.dir/clean
-.PHONY : Build/Tests/CMakeFiles/ExperimentalConfigure.dir/clean
+Tests/CMakeFiles/ExperimentalConfigure.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalConfigure.dir\build.make Tests/CMakeFiles/ExperimentalConfigure.dir/clean
+.PHONY : Tests/CMakeFiles/ExperimentalConfigure.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/Continuous.dir
+# Target rules for target Tests/CMakeFiles/Continuous.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/Continuous.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\Continuous.dir\build.make Build/Tests/CMakeFiles/Continuous.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\Continuous.dir\build.make Build/Tests/CMakeFiles/Continuous.dir/build
+Tests/CMakeFiles/Continuous.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\Continuous.dir\build.make Tests/CMakeFiles/Continuous.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\Continuous.dir\build.make Tests/CMakeFiles/Continuous.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target Continuous"
-.PHONY : Build/Tests/CMakeFiles/Continuous.dir/all
+.PHONY : Tests/CMakeFiles/Continuous.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/Continuous.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/Continuous.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/Continuous.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/Continuous.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/Continuous.dir/rule
+.PHONY : Tests/CMakeFiles/Continuous.dir/rule
 
 # Convenience name for target.
-Continuous: Build/Tests/CMakeFiles/Continuous.dir/rule
+Continuous: Tests/CMakeFiles/Continuous.dir/rule
 
 .PHONY : Continuous
 
 # clean rule for target.
-Build/Tests/CMakeFiles/Continuous.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\Continuous.dir\build.make Build/Tests/CMakeFiles/Continuous.dir/clean
-.PHONY : Build/Tests/CMakeFiles/Continuous.dir/clean
+Tests/CMakeFiles/Continuous.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\Continuous.dir\build.make Tests/CMakeFiles/Continuous.dir/clean
+.PHONY : Tests/CMakeFiles/Continuous.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/Nightly.dir
+# Target rules for target Tests/CMakeFiles/Nightly.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/Nightly.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\Nightly.dir\build.make Build/Tests/CMakeFiles/Nightly.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\Nightly.dir\build.make Build/Tests/CMakeFiles/Nightly.dir/build
+Tests/CMakeFiles/Nightly.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\Nightly.dir\build.make Tests/CMakeFiles/Nightly.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\Nightly.dir\build.make Tests/CMakeFiles/Nightly.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target Nightly"
-.PHONY : Build/Tests/CMakeFiles/Nightly.dir/all
+.PHONY : Tests/CMakeFiles/Nightly.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/Nightly.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/Nightly.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/Nightly.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/Nightly.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/Nightly.dir/rule
+.PHONY : Tests/CMakeFiles/Nightly.dir/rule
 
 # Convenience name for target.
-Nightly: Build/Tests/CMakeFiles/Nightly.dir/rule
+Nightly: Tests/CMakeFiles/Nightly.dir/rule
 
 .PHONY : Nightly
 
 # clean rule for target.
-Build/Tests/CMakeFiles/Nightly.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\Nightly.dir\build.make Build/Tests/CMakeFiles/Nightly.dir/clean
-.PHONY : Build/Tests/CMakeFiles/Nightly.dir/clean
+Tests/CMakeFiles/Nightly.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\Nightly.dir\build.make Tests/CMakeFiles/Nightly.dir/clean
+.PHONY : Tests/CMakeFiles/Nightly.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/NightlySubmit.dir
+# Target rules for target Tests/CMakeFiles/NightlySubmit.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/NightlySubmit.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlySubmit.dir\build.make Build/Tests/CMakeFiles/NightlySubmit.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlySubmit.dir\build.make Build/Tests/CMakeFiles/NightlySubmit.dir/build
+Tests/CMakeFiles/NightlySubmit.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlySubmit.dir\build.make Tests/CMakeFiles/NightlySubmit.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlySubmit.dir\build.make Tests/CMakeFiles/NightlySubmit.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target NightlySubmit"
-.PHONY : Build/Tests/CMakeFiles/NightlySubmit.dir/all
+.PHONY : Tests/CMakeFiles/NightlySubmit.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/NightlySubmit.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/NightlySubmit.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/NightlySubmit.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/NightlySubmit.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/NightlySubmit.dir/rule
+.PHONY : Tests/CMakeFiles/NightlySubmit.dir/rule
 
 # Convenience name for target.
-NightlySubmit: Build/Tests/CMakeFiles/NightlySubmit.dir/rule
+NightlySubmit: Tests/CMakeFiles/NightlySubmit.dir/rule
 
 .PHONY : NightlySubmit
 
 # clean rule for target.
-Build/Tests/CMakeFiles/NightlySubmit.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlySubmit.dir\build.make Build/Tests/CMakeFiles/NightlySubmit.dir/clean
-.PHONY : Build/Tests/CMakeFiles/NightlySubmit.dir/clean
+Tests/CMakeFiles/NightlySubmit.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlySubmit.dir\build.make Tests/CMakeFiles/NightlySubmit.dir/clean
+.PHONY : Tests/CMakeFiles/NightlySubmit.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/NightlyStart.dir
+# Target rules for target Tests/CMakeFiles/NightlyStart.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/NightlyStart.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyStart.dir\build.make Build/Tests/CMakeFiles/NightlyStart.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyStart.dir\build.make Build/Tests/CMakeFiles/NightlyStart.dir/build
+Tests/CMakeFiles/NightlyStart.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyStart.dir\build.make Tests/CMakeFiles/NightlyStart.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyStart.dir\build.make Tests/CMakeFiles/NightlyStart.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target NightlyStart"
-.PHONY : Build/Tests/CMakeFiles/NightlyStart.dir/all
+.PHONY : Tests/CMakeFiles/NightlyStart.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/NightlyStart.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/NightlyStart.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/NightlyStart.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/NightlyStart.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/NightlyStart.dir/rule
+.PHONY : Tests/CMakeFiles/NightlyStart.dir/rule
 
 # Convenience name for target.
-NightlyStart: Build/Tests/CMakeFiles/NightlyStart.dir/rule
+NightlyStart: Tests/CMakeFiles/NightlyStart.dir/rule
 
 .PHONY : NightlyStart
 
 # clean rule for target.
-Build/Tests/CMakeFiles/NightlyStart.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyStart.dir\build.make Build/Tests/CMakeFiles/NightlyStart.dir/clean
-.PHONY : Build/Tests/CMakeFiles/NightlyStart.dir/clean
+Tests/CMakeFiles/NightlyStart.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyStart.dir\build.make Tests/CMakeFiles/NightlyStart.dir/clean
+.PHONY : Tests/CMakeFiles/NightlyStart.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/ExperimentalCoverage.dir
+# Target rules for target Tests/CMakeFiles/ExperimentalCoverage.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/ExperimentalCoverage.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalCoverage.dir\build.make Build/Tests/CMakeFiles/ExperimentalCoverage.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalCoverage.dir\build.make Build/Tests/CMakeFiles/ExperimentalCoverage.dir/build
+Tests/CMakeFiles/ExperimentalCoverage.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalCoverage.dir\build.make Tests/CMakeFiles/ExperimentalCoverage.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalCoverage.dir\build.make Tests/CMakeFiles/ExperimentalCoverage.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target ExperimentalCoverage"
-.PHONY : Build/Tests/CMakeFiles/ExperimentalCoverage.dir/all
+.PHONY : Tests/CMakeFiles/ExperimentalCoverage.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/ExperimentalCoverage.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/ExperimentalCoverage.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/ExperimentalCoverage.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/ExperimentalCoverage.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/ExperimentalCoverage.dir/rule
+.PHONY : Tests/CMakeFiles/ExperimentalCoverage.dir/rule
 
 # Convenience name for target.
-ExperimentalCoverage: Build/Tests/CMakeFiles/ExperimentalCoverage.dir/rule
+ExperimentalCoverage: Tests/CMakeFiles/ExperimentalCoverage.dir/rule
 
 .PHONY : ExperimentalCoverage
 
 # clean rule for target.
-Build/Tests/CMakeFiles/ExperimentalCoverage.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalCoverage.dir\build.make Build/Tests/CMakeFiles/ExperimentalCoverage.dir/clean
-.PHONY : Build/Tests/CMakeFiles/ExperimentalCoverage.dir/clean
+Tests/CMakeFiles/ExperimentalCoverage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalCoverage.dir\build.make Tests/CMakeFiles/ExperimentalCoverage.dir/clean
+.PHONY : Tests/CMakeFiles/ExperimentalCoverage.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/NightlyCoverage.dir
+# Target rules for target Tests/CMakeFiles/NightlyCoverage.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/NightlyCoverage.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyCoverage.dir\build.make Build/Tests/CMakeFiles/NightlyCoverage.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyCoverage.dir\build.make Build/Tests/CMakeFiles/NightlyCoverage.dir/build
+Tests/CMakeFiles/NightlyCoverage.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyCoverage.dir\build.make Tests/CMakeFiles/NightlyCoverage.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyCoverage.dir\build.make Tests/CMakeFiles/NightlyCoverage.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target NightlyCoverage"
-.PHONY : Build/Tests/CMakeFiles/NightlyCoverage.dir/all
+.PHONY : Tests/CMakeFiles/NightlyCoverage.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/NightlyCoverage.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/NightlyCoverage.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/NightlyCoverage.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/NightlyCoverage.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/NightlyCoverage.dir/rule
+.PHONY : Tests/CMakeFiles/NightlyCoverage.dir/rule
 
 # Convenience name for target.
-NightlyCoverage: Build/Tests/CMakeFiles/NightlyCoverage.dir/rule
+NightlyCoverage: Tests/CMakeFiles/NightlyCoverage.dir/rule
 
 .PHONY : NightlyCoverage
 
 # clean rule for target.
-Build/Tests/CMakeFiles/NightlyCoverage.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyCoverage.dir\build.make Build/Tests/CMakeFiles/NightlyCoverage.dir/clean
-.PHONY : Build/Tests/CMakeFiles/NightlyCoverage.dir/clean
+Tests/CMakeFiles/NightlyCoverage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyCoverage.dir\build.make Tests/CMakeFiles/NightlyCoverage.dir/clean
+.PHONY : Tests/CMakeFiles/NightlyCoverage.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/ContinuousBuild.dir
+# Target rules for target Tests/CMakeFiles/ContinuousBuild.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/ContinuousBuild.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousBuild.dir\build.make Build/Tests/CMakeFiles/ContinuousBuild.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousBuild.dir\build.make Build/Tests/CMakeFiles/ContinuousBuild.dir/build
+Tests/CMakeFiles/ContinuousBuild.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousBuild.dir\build.make Tests/CMakeFiles/ContinuousBuild.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousBuild.dir\build.make Tests/CMakeFiles/ContinuousBuild.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target ContinuousBuild"
-.PHONY : Build/Tests/CMakeFiles/ContinuousBuild.dir/all
+.PHONY : Tests/CMakeFiles/ContinuousBuild.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/ContinuousBuild.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/ContinuousBuild.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/ContinuousBuild.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/ContinuousBuild.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/ContinuousBuild.dir/rule
+.PHONY : Tests/CMakeFiles/ContinuousBuild.dir/rule
 
 # Convenience name for target.
-ContinuousBuild: Build/Tests/CMakeFiles/ContinuousBuild.dir/rule
+ContinuousBuild: Tests/CMakeFiles/ContinuousBuild.dir/rule
 
 .PHONY : ContinuousBuild
 
 # clean rule for target.
-Build/Tests/CMakeFiles/ContinuousBuild.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousBuild.dir\build.make Build/Tests/CMakeFiles/ContinuousBuild.dir/clean
-.PHONY : Build/Tests/CMakeFiles/ContinuousBuild.dir/clean
+Tests/CMakeFiles/ContinuousBuild.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousBuild.dir\build.make Tests/CMakeFiles/ContinuousBuild.dir/clean
+.PHONY : Tests/CMakeFiles/ContinuousBuild.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/testbench.dir
+# Target rules for target Tests/CMakeFiles/testbench.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/testbench.dir/all: Src/CMakeFiles/PPLIB.dir/all
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\testbench.dir\build.make Build/Tests/CMakeFiles/testbench.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\testbench.dir\build.make Build/Tests/CMakeFiles/testbench.dir/build
+Tests/CMakeFiles/testbench.dir/all: Src/CMakeFiles/PPLIB.dir/all
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\testbench.dir\build.make Tests/CMakeFiles/testbench.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\testbench.dir\build.make Tests/CMakeFiles/testbench.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num=18,19 "Built target testbench"
-.PHONY : Build/Tests/CMakeFiles/testbench.dir/all
+.PHONY : Tests/CMakeFiles/testbench.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/testbench.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/testbench.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 10
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/testbench.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/testbench.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/testbench.dir/rule
+.PHONY : Tests/CMakeFiles/testbench.dir/rule
 
 # Convenience name for target.
-testbench: Build/Tests/CMakeFiles/testbench.dir/rule
+testbench: Tests/CMakeFiles/testbench.dir/rule
 
 .PHONY : testbench
 
 # clean rule for target.
-Build/Tests/CMakeFiles/testbench.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\testbench.dir\build.make Build/Tests/CMakeFiles/testbench.dir/clean
-.PHONY : Build/Tests/CMakeFiles/testbench.dir/clean
+Tests/CMakeFiles/testbench.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\testbench.dir\build.make Tests/CMakeFiles/testbench.dir/clean
+.PHONY : Tests/CMakeFiles/testbench.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/ExperimentalStart.dir
+# Target rules for target Tests/CMakeFiles/ExperimentalStart.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/ExperimentalStart.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalStart.dir\build.make Build/Tests/CMakeFiles/ExperimentalStart.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalStart.dir\build.make Build/Tests/CMakeFiles/ExperimentalStart.dir/build
+Tests/CMakeFiles/ExperimentalStart.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalStart.dir\build.make Tests/CMakeFiles/ExperimentalStart.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalStart.dir\build.make Tests/CMakeFiles/ExperimentalStart.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target ExperimentalStart"
-.PHONY : Build/Tests/CMakeFiles/ExperimentalStart.dir/all
+.PHONY : Tests/CMakeFiles/ExperimentalStart.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/ExperimentalStart.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/ExperimentalStart.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/ExperimentalStart.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/ExperimentalStart.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/ExperimentalStart.dir/rule
+.PHONY : Tests/CMakeFiles/ExperimentalStart.dir/rule
 
 # Convenience name for target.
-ExperimentalStart: Build/Tests/CMakeFiles/ExperimentalStart.dir/rule
+ExperimentalStart: Tests/CMakeFiles/ExperimentalStart.dir/rule
 
 .PHONY : ExperimentalStart
 
 # clean rule for target.
-Build/Tests/CMakeFiles/ExperimentalStart.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalStart.dir\build.make Build/Tests/CMakeFiles/ExperimentalStart.dir/clean
-.PHONY : Build/Tests/CMakeFiles/ExperimentalStart.dir/clean
+Tests/CMakeFiles/ExperimentalStart.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalStart.dir\build.make Tests/CMakeFiles/ExperimentalStart.dir/clean
+.PHONY : Tests/CMakeFiles/ExperimentalStart.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/NightlyBuild.dir
+# Target rules for target Tests/CMakeFiles/NightlyBuild.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/NightlyBuild.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyBuild.dir\build.make Build/Tests/CMakeFiles/NightlyBuild.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyBuild.dir\build.make Build/Tests/CMakeFiles/NightlyBuild.dir/build
+Tests/CMakeFiles/NightlyBuild.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyBuild.dir\build.make Tests/CMakeFiles/NightlyBuild.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyBuild.dir\build.make Tests/CMakeFiles/NightlyBuild.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target NightlyBuild"
-.PHONY : Build/Tests/CMakeFiles/NightlyBuild.dir/all
+.PHONY : Tests/CMakeFiles/NightlyBuild.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/NightlyBuild.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/NightlyBuild.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/NightlyBuild.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/NightlyBuild.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/NightlyBuild.dir/rule
+.PHONY : Tests/CMakeFiles/NightlyBuild.dir/rule
 
 # Convenience name for target.
-NightlyBuild: Build/Tests/CMakeFiles/NightlyBuild.dir/rule
+NightlyBuild: Tests/CMakeFiles/NightlyBuild.dir/rule
 
 .PHONY : NightlyBuild
 
 # clean rule for target.
-Build/Tests/CMakeFiles/NightlyBuild.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\NightlyBuild.dir\build.make Build/Tests/CMakeFiles/NightlyBuild.dir/clean
-.PHONY : Build/Tests/CMakeFiles/NightlyBuild.dir/clean
+Tests/CMakeFiles/NightlyBuild.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\NightlyBuild.dir\build.make Tests/CMakeFiles/NightlyBuild.dir/clean
+.PHONY : Tests/CMakeFiles/NightlyBuild.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/ExperimentalBuild.dir
+# Target rules for target Tests/CMakeFiles/ExperimentalBuild.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/ExperimentalBuild.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalBuild.dir\build.make Build/Tests/CMakeFiles/ExperimentalBuild.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalBuild.dir\build.make Build/Tests/CMakeFiles/ExperimentalBuild.dir/build
+Tests/CMakeFiles/ExperimentalBuild.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalBuild.dir\build.make Tests/CMakeFiles/ExperimentalBuild.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalBuild.dir\build.make Tests/CMakeFiles/ExperimentalBuild.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target ExperimentalBuild"
-.PHONY : Build/Tests/CMakeFiles/ExperimentalBuild.dir/all
+.PHONY : Tests/CMakeFiles/ExperimentalBuild.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/ExperimentalBuild.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/ExperimentalBuild.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/ExperimentalBuild.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/ExperimentalBuild.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/ExperimentalBuild.dir/rule
+.PHONY : Tests/CMakeFiles/ExperimentalBuild.dir/rule
 
 # Convenience name for target.
-ExperimentalBuild: Build/Tests/CMakeFiles/ExperimentalBuild.dir/rule
+ExperimentalBuild: Tests/CMakeFiles/ExperimentalBuild.dir/rule
 
 .PHONY : ExperimentalBuild
 
 # clean rule for target.
-Build/Tests/CMakeFiles/ExperimentalBuild.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalBuild.dir\build.make Build/Tests/CMakeFiles/ExperimentalBuild.dir/clean
-.PHONY : Build/Tests/CMakeFiles/ExperimentalBuild.dir/clean
+Tests/CMakeFiles/ExperimentalBuild.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalBuild.dir\build.make Tests/CMakeFiles/ExperimentalBuild.dir/clean
+.PHONY : Tests/CMakeFiles/ExperimentalBuild.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/ExperimentalUpdate.dir
+# Target rules for target Tests/CMakeFiles/ExperimentalUpdate.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/ExperimentalUpdate.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalUpdate.dir\build.make Build/Tests/CMakeFiles/ExperimentalUpdate.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalUpdate.dir\build.make Build/Tests/CMakeFiles/ExperimentalUpdate.dir/build
+Tests/CMakeFiles/ExperimentalUpdate.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalUpdate.dir\build.make Tests/CMakeFiles/ExperimentalUpdate.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalUpdate.dir\build.make Tests/CMakeFiles/ExperimentalUpdate.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target ExperimentalUpdate"
-.PHONY : Build/Tests/CMakeFiles/ExperimentalUpdate.dir/all
+.PHONY : Tests/CMakeFiles/ExperimentalUpdate.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/ExperimentalUpdate.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/ExperimentalUpdate.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/ExperimentalUpdate.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/ExperimentalUpdate.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/ExperimentalUpdate.dir/rule
+.PHONY : Tests/CMakeFiles/ExperimentalUpdate.dir/rule
 
 # Convenience name for target.
-ExperimentalUpdate: Build/Tests/CMakeFiles/ExperimentalUpdate.dir/rule
+ExperimentalUpdate: Tests/CMakeFiles/ExperimentalUpdate.dir/rule
 
 .PHONY : ExperimentalUpdate
 
 # clean rule for target.
-Build/Tests/CMakeFiles/ExperimentalUpdate.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ExperimentalUpdate.dir\build.make Build/Tests/CMakeFiles/ExperimentalUpdate.dir/clean
-.PHONY : Build/Tests/CMakeFiles/ExperimentalUpdate.dir/clean
+Tests/CMakeFiles/ExperimentalUpdate.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ExperimentalUpdate.dir\build.make Tests/CMakeFiles/ExperimentalUpdate.dir/clean
+.PHONY : Tests/CMakeFiles/ExperimentalUpdate.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/ContinuousStart.dir
+# Target rules for target Tests/CMakeFiles/ContinuousStart.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/ContinuousStart.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousStart.dir\build.make Build/Tests/CMakeFiles/ContinuousStart.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousStart.dir\build.make Build/Tests/CMakeFiles/ContinuousStart.dir/build
+Tests/CMakeFiles/ContinuousStart.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousStart.dir\build.make Tests/CMakeFiles/ContinuousStart.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousStart.dir\build.make Tests/CMakeFiles/ContinuousStart.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target ContinuousStart"
-.PHONY : Build/Tests/CMakeFiles/ContinuousStart.dir/all
+.PHONY : Tests/CMakeFiles/ContinuousStart.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/ContinuousStart.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/ContinuousStart.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/ContinuousStart.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/ContinuousStart.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/ContinuousStart.dir/rule
+.PHONY : Tests/CMakeFiles/ContinuousStart.dir/rule
 
 # Convenience name for target.
-ContinuousStart: Build/Tests/CMakeFiles/ContinuousStart.dir/rule
+ContinuousStart: Tests/CMakeFiles/ContinuousStart.dir/rule
 
 .PHONY : ContinuousStart
 
 # clean rule for target.
-Build/Tests/CMakeFiles/ContinuousStart.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousStart.dir\build.make Build/Tests/CMakeFiles/ContinuousStart.dir/clean
-.PHONY : Build/Tests/CMakeFiles/ContinuousStart.dir/clean
+Tests/CMakeFiles/ContinuousStart.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousStart.dir\build.make Tests/CMakeFiles/ContinuousStart.dir/clean
+.PHONY : Tests/CMakeFiles/ContinuousStart.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/ContinuousMemCheck.dir
+# Target rules for target Tests/CMakeFiles/ContinuousMemCheck.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/ContinuousMemCheck.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousMemCheck.dir\build.make Build/Tests/CMakeFiles/ContinuousMemCheck.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousMemCheck.dir\build.make Build/Tests/CMakeFiles/ContinuousMemCheck.dir/build
+Tests/CMakeFiles/ContinuousMemCheck.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousMemCheck.dir\build.make Tests/CMakeFiles/ContinuousMemCheck.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousMemCheck.dir\build.make Tests/CMakeFiles/ContinuousMemCheck.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target ContinuousMemCheck"
-.PHONY : Build/Tests/CMakeFiles/ContinuousMemCheck.dir/all
+.PHONY : Tests/CMakeFiles/ContinuousMemCheck.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/ContinuousMemCheck.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/ContinuousMemCheck.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/ContinuousMemCheck.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/ContinuousMemCheck.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/ContinuousMemCheck.dir/rule
+.PHONY : Tests/CMakeFiles/ContinuousMemCheck.dir/rule
 
 # Convenience name for target.
-ContinuousMemCheck: Build/Tests/CMakeFiles/ContinuousMemCheck.dir/rule
+ContinuousMemCheck: Tests/CMakeFiles/ContinuousMemCheck.dir/rule
 
 .PHONY : ContinuousMemCheck
 
 # clean rule for target.
-Build/Tests/CMakeFiles/ContinuousMemCheck.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousMemCheck.dir\build.make Build/Tests/CMakeFiles/ContinuousMemCheck.dir/clean
-.PHONY : Build/Tests/CMakeFiles/ContinuousMemCheck.dir/clean
+Tests/CMakeFiles/ContinuousMemCheck.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousMemCheck.dir\build.make Tests/CMakeFiles/ContinuousMemCheck.dir/clean
+.PHONY : Tests/CMakeFiles/ContinuousMemCheck.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/ContinuousTest.dir
+# Target rules for target Tests/CMakeFiles/ContinuousTest.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/ContinuousTest.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousTest.dir\build.make Build/Tests/CMakeFiles/ContinuousTest.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousTest.dir\build.make Build/Tests/CMakeFiles/ContinuousTest.dir/build
+Tests/CMakeFiles/ContinuousTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousTest.dir\build.make Tests/CMakeFiles/ContinuousTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousTest.dir\build.make Tests/CMakeFiles/ContinuousTest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target ContinuousTest"
-.PHONY : Build/Tests/CMakeFiles/ContinuousTest.dir/all
+.PHONY : Tests/CMakeFiles/ContinuousTest.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/ContinuousTest.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/ContinuousTest.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/ContinuousTest.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/ContinuousTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/ContinuousTest.dir/rule
+.PHONY : Tests/CMakeFiles/ContinuousTest.dir/rule
 
 # Convenience name for target.
-ContinuousTest: Build/Tests/CMakeFiles/ContinuousTest.dir/rule
+ContinuousTest: Tests/CMakeFiles/ContinuousTest.dir/rule
 
 .PHONY : ContinuousTest
 
 # clean rule for target.
-Build/Tests/CMakeFiles/ContinuousTest.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousTest.dir\build.make Build/Tests/CMakeFiles/ContinuousTest.dir/clean
-.PHONY : Build/Tests/CMakeFiles/ContinuousTest.dir/clean
+Tests/CMakeFiles/ContinuousTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousTest.dir\build.make Tests/CMakeFiles/ContinuousTest.dir/clean
+.PHONY : Tests/CMakeFiles/ContinuousTest.dir/clean
 
 #=============================================================================
-# Target rules for target Build/Tests/CMakeFiles/ContinuousSubmit.dir
+# Target rules for target Tests/CMakeFiles/ContinuousSubmit.dir
 
 # All Build rule for target.
-Build/Tests/CMakeFiles/ContinuousSubmit.dir/all:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousSubmit.dir\build.make Build/Tests/CMakeFiles/ContinuousSubmit.dir/depend
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousSubmit.dir\build.make Build/Tests/CMakeFiles/ContinuousSubmit.dir/build
+Tests/CMakeFiles/ContinuousSubmit.dir/all:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousSubmit.dir\build.make Tests/CMakeFiles/ContinuousSubmit.dir/depend
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousSubmit.dir\build.make Tests/CMakeFiles/ContinuousSubmit.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles --progress-num= "Built target ContinuousSubmit"
-.PHONY : Build/Tests/CMakeFiles/ContinuousSubmit.dir/all
+.PHONY : Tests/CMakeFiles/ContinuousSubmit.dir/all
 
 # Build rule for subdir invocation for target.
-Build/Tests/CMakeFiles/ContinuousSubmit.dir/rule: cmake_check_build_system
+Tests/CMakeFiles/ContinuousSubmit.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Build/Tests/CMakeFiles/ContinuousSubmit.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests/CMakeFiles/ContinuousSubmit.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\PathPlanningAlgorithms\Build\CMakeFiles 0
-.PHONY : Build/Tests/CMakeFiles/ContinuousSubmit.dir/rule
+.PHONY : Tests/CMakeFiles/ContinuousSubmit.dir/rule
 
 # Convenience name for target.
-ContinuousSubmit: Build/Tests/CMakeFiles/ContinuousSubmit.dir/rule
+ContinuousSubmit: Tests/CMakeFiles/ContinuousSubmit.dir/rule
 
 .PHONY : ContinuousSubmit
 
 # clean rule for target.
-Build/Tests/CMakeFiles/ContinuousSubmit.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Build\Tests\CMakeFiles\ContinuousSubmit.dir\build.make Build/Tests/CMakeFiles/ContinuousSubmit.dir/clean
-.PHONY : Build/Tests/CMakeFiles/ContinuousSubmit.dir/clean
+Tests/CMakeFiles/ContinuousSubmit.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Tests\CMakeFiles\ContinuousSubmit.dir\build.make Tests/CMakeFiles/ContinuousSubmit.dir/clean
+.PHONY : Tests/CMakeFiles/ContinuousSubmit.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
