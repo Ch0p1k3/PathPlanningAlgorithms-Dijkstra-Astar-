@@ -138,12 +138,6 @@ android/log.h
 assert.h
 -
 
-D:/Projects/PathPlanningAlgorithms/Src/xmllogger.cpp
-xmllogger.h
-D:/Projects/PathPlanningAlgorithms/Src/xmllogger.h
-iostream
--
-
 D:/Projects/PathPlanningAlgorithms/Src/xmllogger.h
 tinyxml2.h
 D:/Projects/PathPlanningAlgorithms/Src/tinyxml2.h

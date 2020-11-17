@@ -1,10 +1,10 @@
-Start testing: Nov 04 21:07 Центральная Азия (зима)
+Start testing: Nov 17 18:22 RTZ 2 (зима)
 ----------------------------------------------------------
 1/12 Testing: Test1
 1/12 Test: Test1
 Command: "D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests/testbench.exe" "../../../TestData/0_test.xml"
 Directory: D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests
-"Test1" start time: Nov 04 21:07 Центральная Азия (зима)
+"Test1" start time: Nov 17 18:22 RTZ 2 (зима)
 Output:
 ----------------------------------------------------------
 tiny
@@ -14,18 +14,18 @@ Warning! Value of 'logfilename' tag is missing.
 Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
 Incorrect path legth
 <end of output>
-Test time =   2.12 sec
+Test time =   0.07 sec
 ----------------------------------------------------------
 Test Failed.
-"Test1" end time: Nov 04 21:08 Центральная Азия (зима)
-"Test1" time elapsed: 00:00:02
+"Test1" end time: Nov 17 18:22 RTZ 2 (зима)
+"Test1" time elapsed: 00:00:00
 ----------------------------------------------------------
 
 2/12 Testing: Test2
 2/12 Test: Test2
 Command: "D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests/testbench.exe" "../../../TestData/1_test.xml"
 Directory: D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests
-"Test2" start time: Nov 04 21:08 Центральная Азия (зима)
+"Test2" start time: Nov 17 18:22 RTZ 2 (зима)
 Output:
 ----------------------------------------------------------
 tiny
@@ -35,10 +35,10 @@ Warning! Value of 'logfilename' tag is missing.
 Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
 Incorrect path legth
 <end of output>
-Test time =   0.18 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Failed.
-"Test2" end time: Nov 04 21:08 Центральная Азия (зима)
+"Test2" end time: Nov 17 18:22 RTZ 2 (зима)
 "Test2" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -46,7 +46,7 @@ Test Failed.
 3/12 Test: Test3
 Command: "D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests/testbench.exe" "../../../TestData/2_test.xml"
 Directory: D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests
-"Test3" start time: Nov 04 21:08 Центральная Азия (зима)
+"Test3" start time: Nov 17 18:22 RTZ 2 (зима)
 Output:
 ----------------------------------------------------------
 Warning! Value of'metrictype' is not correctly specified.
@@ -58,10 +58,10 @@ Warning! Value of 'logfilename' tag is missing.
 Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
 Incorrect path legth
 <end of output>
-Test time =   0.13 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Failed.
-"Test3" end time: Nov 04 21:08 Центральная Азия (зима)
+"Test3" end time: Nov 17 18:22 RTZ 2 (зима)
 "Test3" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -69,7 +69,7 @@ Test Failed.
 4/12 Test: Test4
 Command: "D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests/testbench.exe" "../../../TestData/3_test.xml"
 Directory: D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests
-"Test4" start time: Nov 04 21:08 Центральная Азия (зима)
+"Test4" start time: Nov 17 18:22 RTZ 2 (зима)
 Output:
 ----------------------------------------------------------
 Warning! Value of'metrictype' is not correctly specified.
@@ -81,10 +81,10 @@ Warning! Value of 'logfilename' tag is missing.
 Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
 Incorrect path legth
 <end of output>
-Test time =   0.16 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Failed.
-"Test4" end time: Nov 04 21:08 Центральная Азия (зима)
+"Test4" end time: Nov 17 18:22 RTZ 2 (зима)
 "Test4" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -92,7 +92,7 @@ Test Failed.
 5/12 Test: Test5
 Command: "D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests/testbench.exe" "../../../TestData/4_test.xml"
 Directory: D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests
-"Test5" start time: Nov 04 21:08 Центральная Азия (зима)
+"Test5" start time: Nov 17 18:22 RTZ 2 (зима)
 Output:
 ----------------------------------------------------------
 Warning! Value of'metrictype' is not correctly specified.
@@ -104,10 +104,10 @@ Warning! Value of 'logfilename' tag is missing.
 Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
 Incorrect path legth
 <end of output>
-Test time =   0.15 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Failed.
-"Test5" end time: Nov 04 21:08 Центральная Азия (зима)
+"Test5" end time: Nov 17 18:22 RTZ 2 (зима)
 "Test5" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -115,7 +115,7 @@ Test Failed.
 6/12 Test: Test6
 Command: "D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests/testbench.exe" "../../../TestData/5_test.xml"
 Directory: D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests
-"Test6" start time: Nov 04 21:08 Центральная Азия (зима)
+"Test6" start time: Nov 17 18:22 RTZ 2 (зима)
 Output:
 ----------------------------------------------------------
 Warning! Value of'metrictype' is not correctly specified.
@@ -127,10 +127,10 @@ Warning! Value of 'logfilename' tag is missing.
 Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
 Incorrect path legth
 <end of output>
-Test time =   0.19 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Failed.
-"Test6" end time: Nov 04 21:08 Центральная Азия (зима)
+"Test6" end time: Nov 17 18:22 RTZ 2 (зима)
 "Test6" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -138,7 +138,7 @@ Test Failed.
 7/12 Test: Test7
 Command: "D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests/testbench.exe" "../../../TestData/6_test.xml"
 Directory: D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests
-"Test7" start time: Nov 04 21:08 Центральная Азия (зима)
+"Test7" start time: Nov 17 18:22 RTZ 2 (зима)
 Output:
 ----------------------------------------------------------
 Warning! Value of'metrictype' is not correctly specified.
@@ -150,10 +150,10 @@ Warning! Value of 'logfilename' tag is missing.
 Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
 Incorrect path legth
 <end of output>
-Test time =   0.10 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Failed.
-"Test7" end time: Nov 04 21:08 Центральная Азия (зима)
+"Test7" end time: Nov 17 18:22 RTZ 2 (зима)
 "Test7" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -161,7 +161,7 @@ Test Failed.
 8/12 Test: Test8
 Command: "D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests/testbench.exe" "../../../TestData/7_test.xml"
 Directory: D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests
-"Test8" start time: Nov 04 21:08 Центральная Азия (зима)
+"Test8" start time: Nov 17 18:22 RTZ 2 (зима)
 Output:
 ----------------------------------------------------------
 Warning! Value of'metrictype' is not correctly specified.
@@ -173,10 +173,10 @@ Warning! Value of 'logfilename' tag is missing.
 Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
 Incorrect path legth
 <end of output>
-Test time =   0.12 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Failed.
-"Test8" end time: Nov 04 21:08 Центральная Азия (зима)
+"Test8" end time: Nov 17 18:22 RTZ 2 (зима)
 "Test8" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -184,7 +184,7 @@ Test Failed.
 9/12 Test: Test9
 Command: "D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests/testbench.exe" "../../../TestData/8_test.xml"
 Directory: D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests
-"Test9" start time: Nov 04 21:08 Центральная Азия (зима)
+"Test9" start time: Nov 17 18:22 RTZ 2 (зима)
 Output:
 ----------------------------------------------------------
 Warning! Value of'metrictype' is not correctly specified.
@@ -196,10 +196,10 @@ Warning! Value of 'logfilename' tag is missing.
 Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
 Incorrect path legth
 <end of output>
-Test time =   0.10 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Failed.
-"Test9" end time: Nov 04 21:08 Центральная Азия (зима)
+"Test9" end time: Nov 17 18:22 RTZ 2 (зима)
 "Test9" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -207,7 +207,7 @@ Test Failed.
 10/12 Test: Test10
 Command: "D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests/testbench.exe" "../../../TestData/9_test.xml"
 Directory: D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests
-"Test10" start time: Nov 04 21:08 Центральная Азия (зима)
+"Test10" start time: Nov 17 18:22 RTZ 2 (зима)
 Output:
 ----------------------------------------------------------
 Warning! Value of'metrictype' is not correctly specified.
@@ -219,10 +219,10 @@ Warning! Value of 'logfilename' tag is missing.
 Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
 Incorrect path legth
 <end of output>
-Test time =   0.11 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Failed.
-"Test10" end time: Nov 04 21:08 Центральная Азия (зима)
+"Test10" end time: Nov 17 18:22 RTZ 2 (зима)
 "Test10" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -230,7 +230,7 @@ Test Failed.
 11/12 Test: Test11
 Command: "D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests/testbench.exe" "../../../TestData/A_test.xml"
 Directory: D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests
-"Test11" start time: Nov 04 21:08 Центральная Азия (зима)
+"Test11" start time: Nov 17 18:22 RTZ 2 (зима)
 Output:
 ----------------------------------------------------------
 tiny
@@ -240,10 +240,10 @@ Warning! Value of 'logfilename' tag is missing.
 Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
 Incorrect path legth
 <end of output>
-Test time =   0.11 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Failed.
-"Test11" end time: Nov 04 21:08 Центральная Азия (зима)
+"Test11" end time: Nov 17 18:22 RTZ 2 (зима)
 "Test11" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -251,7 +251,7 @@ Test Failed.
 12/12 Test: Test12
 Command: "D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests/testbench.exe" "../../../TestData/B_test.xml"
 Directory: D:/Projects/PathPlanningAlgorithms/Build/Debug/Tests
-"Test12" start time: Nov 04 21:08 Центральная Азия (зима)
+"Test12" start time: Nov 17 18:22 RTZ 2 (зима)
 Output:
 ----------------------------------------------------------
 tiny
@@ -261,11 +261,11 @@ Warning! Value of 'logfilename' tag is missing.
 Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
 Incorrect path legth
 <end of output>
-Test time =   0.11 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Failed.
-"Test12" end time: Nov 04 21:08 Центральная Азия (зима)
+"Test12" end time: Nov 17 18:22 RTZ 2 (зима)
 "Test12" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 04 21:08 Центральная Азия (зима)
+End testing: Nov 17 18:22 RTZ 2 (зима)

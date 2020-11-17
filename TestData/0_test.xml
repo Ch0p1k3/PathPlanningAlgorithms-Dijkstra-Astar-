@@ -534,7 +534,7 @@
         <cutcorners>0</cutcorners>
     </algorithm>
     <options>
-        <loglevel>0.5</loglevel>
+        <loglevel>1</loglevel>
         <logpath/>
         <logfilename/>
     </options>
