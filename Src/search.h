@@ -13,6 +13,7 @@
 #include <memory>
 #include <typeinfo>
 #include <algorithm>
+#include <cmath>
 
 class Search
 {

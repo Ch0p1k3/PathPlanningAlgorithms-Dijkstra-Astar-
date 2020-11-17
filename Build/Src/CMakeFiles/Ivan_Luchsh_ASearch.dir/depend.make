@@ -44,6 +44,16 @@ Src/CMakeFiles/Ivan_Luchsh_ASearch.dir/mission.cpp.obj: ../Src/searchresult.h
 Src/CMakeFiles/Ivan_Luchsh_ASearch.dir/mission.cpp.obj: ../Src/tinyxml2.h
 Src/CMakeFiles/Ivan_Luchsh_ASearch.dir/mission.cpp.obj: ../Src/xmllogger.h
 
+Src/CMakeFiles/Ivan_Luchsh_ASearch.dir/search.cpp.obj: ../Src/coordinates.h
+Src/CMakeFiles/Ivan_Luchsh_ASearch.dir/search.cpp.obj: ../Src/environmentoptions.h
+Src/CMakeFiles/Ivan_Luchsh_ASearch.dir/search.cpp.obj: ../Src/gl_const.h
+Src/CMakeFiles/Ivan_Luchsh_ASearch.dir/search.cpp.obj: ../Src/ilogger.h
+Src/CMakeFiles/Ivan_Luchsh_ASearch.dir/search.cpp.obj: ../Src/map.h
+Src/CMakeFiles/Ivan_Luchsh_ASearch.dir/search.cpp.obj: ../Src/node.h
+Src/CMakeFiles/Ivan_Luchsh_ASearch.dir/search.cpp.obj: ../Src/search.cpp
+Src/CMakeFiles/Ivan_Luchsh_ASearch.dir/search.cpp.obj: ../Src/search.h
+Src/CMakeFiles/Ivan_Luchsh_ASearch.dir/search.cpp.obj: ../Src/searchresult.h
+Src/CMakeFiles/Ivan_Luchsh_ASearch.dir/search.cpp.obj: ../Src/tinyxml2.h
 
 Src/CMakeFiles/Ivan_Luchsh_ASearch.dir/tinyxml2.cpp.obj: ../Src/tinyxml2.cpp
 Src/CMakeFiles/Ivan_Luchsh_ASearch.dir/tinyxml2.cpp.obj: ../Src/tinyxml2.h

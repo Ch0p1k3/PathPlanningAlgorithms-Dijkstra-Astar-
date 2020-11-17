@@ -1,7 +1,7 @@
 #include "search.h"
 
 #define PI_CONSTANT 3.14159265359
-#define SQRT_TWO    1.41421356237
+#define SQRT_TWO    std::sqrt(2)
 
 Search::Search()
 {

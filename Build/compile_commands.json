@@ -75,8 +75,8 @@
   "file": "D:/Projects/PathPlanningAlgorithms/Src/main.cpp"
 },
 {
-  "directory": "D:/Projects/PathPlanningAlgorithms/Build/Tests",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   @CMakeFiles/testbench.dir/includes_CXX.rsp  -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -g   -o CMakeFiles\\testbench.dir\\testbench.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Tests\\testbench.cpp",
-  "file": "D:/Projects/PathPlanningAlgorithms/Tests/testbench.cpp"
+  "directory": "D:/Projects/PathPlanningAlgorithms/Build/Build/Tests",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   @CMakeFiles/testbench.dir/includes_CXX.rsp  -std=c++17 -o -Wall -Wextra -static -static-libgcc -static-libstdc++ -g   -o CMakeFiles\\testbench.dir\\testbench.cpp.obj -c D:\\Projects\\PathPlanningAlgorithms\\Build\\Tests\\testbench.cpp",
+  "file": "D:/Projects/PathPlanningAlgorithms/Build/Tests/testbench.cpp"
 }
 ]

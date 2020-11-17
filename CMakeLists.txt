@@ -14,4 +14,4 @@ set(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR})
 enable_testing()
 
 add_subdirectory(Src)
-add_subdirectory(Tests)
+add_subdirectory(Build/Tests)
