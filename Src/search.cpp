@@ -66,11 +66,21 @@ std::optional<Node> Search::GetNeighbours(Node& v, int i, int j, const Map &map,
                 bool f1 = map.CellOnGridAndIsTraversable(v.i, v.j + j);
                 bool f2 = map.CellOnGridAndIsTraversable(v.i + i, v.j);
                 if ((options.cutcorners && ((!f1 && !f2 && options.allowsqueeze) || (f1 && !f2) || (!f1 && f2))) || (f1 && f2)) {
-                    return Node{v.i + i, v.j + j, 0, v.g + C_D, 0, &v};
+                    return Node
+                        { v.i + i
+                        , v.j + j, v.g + C_D + HeuristicWeight() * Heuristic({v.i + i, v.j + j}, map.getGoal(), options)
+                        , v.g + C_D
+                        , Heuristic({v.i + i, v.j + j}, map.getGoal(), options)
+                        , &v};
                 } 
             }
         } else {
-            return Node{v.i + i, v.j + j, 0, v.g + C_HV, 0, &v};
+            return Node
+                        { v.i + i
+                        , v.j + j, v.g + C_HV + HeuristicWeight() * Heuristic({v.i + i, v.j + j}, map.getGoal(), options)
+                        , v.g + C_HV
+                        , Heuristic({v.i + i, v.j + j}, map.getGoal(), options)
+                        , &v};
         }
     }
     return std::nullopt;
@@ -93,7 +103,15 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
 
     Node* searchedGoal = nullptr;
 
-    open.push_back(Node(start.i, start.j, 0, 0, 0, nullptr));
+    open.push_back(Node
+        (start.i
+        , start.j
+        , HeuristicWeight() * Heuristic(start, goal, options)
+        , 0
+        , Heuristic(start, goal, options)
+        , nullptr)
+    );
+
     while (!open.empty()) {
         ++cntSt;
         auto l = std::min_element(open.begin(), open.end());

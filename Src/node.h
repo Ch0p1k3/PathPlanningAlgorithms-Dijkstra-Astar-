@@ -29,7 +29,7 @@ struct Node
 
     bool operator<(const Node& other)
     {
-        return g < other.g;
+        return F < other.F;
     }
 };
 
