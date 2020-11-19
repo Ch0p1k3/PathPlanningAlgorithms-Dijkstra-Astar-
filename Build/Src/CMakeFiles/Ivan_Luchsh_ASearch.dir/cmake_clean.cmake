@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "../../Bin/Debug/Ivan_Luchsh_ASearch.exe"
-  "../../Bin/Debug/Ivan_Luchsh_ASearch.exe.manifest"
-  "../../Bin/Debug/Ivan_Luchsh_ASearch.pdb"
-  "../../Bin/Debug/libIvan_Luchsh_ASearch.dll.a"
+  "../../Bin/Release/Ivan_Luchsh_ASearch.exe"
+  "../../Bin/Release/Ivan_Luchsh_ASearch.exe.manifest"
+  "../../Bin/Release/Ivan_Luchsh_ASearch.pdb"
+  "../../Bin/Release/libIvan_Luchsh_ASearch.dll.a"
   "CMakeFiles/Ivan_Luchsh_ASearch.dir/config.cpp.obj"
   "CMakeFiles/Ivan_Luchsh_ASearch.dir/environmentoptions.cpp.obj"
   "CMakeFiles/Ivan_Luchsh_ASearch.dir/main.cpp.obj"
