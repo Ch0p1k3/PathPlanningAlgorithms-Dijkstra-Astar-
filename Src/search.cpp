@@ -1,7 +1,8 @@
 #include "search.h"
 
 #define PI_CONSTANT 3.14159265359
-#define SQRT_TWO    std::sqrt(2)
+#define C_D std::sqrt(2)
+#define C_HV 1
 
 Search::Search()
 {
@@ -9,6 +10,53 @@ Search::Search()
 }
 
 Search::~Search() {}
+
+int Search::Diagonal(Coordinates cur, Coordinates goal) const
+{
+    // c_hv * |dx - dy| + c_d * min(dx, dy)
+
+    return C_HV * abs(abs(goal.i - cur.i) - abs(goal.j - cur.j)) + C_D * std::min(abs(goal.i - cur.i), abs(goal.j - cur.j));
+}
+
+int Search::Manhattan(Coordinates cur, Coordinates goal) const
+{
+    // c_hv * (dx + dy)
+
+    return C_HV * (abs(cur.i - goal.i) + abs(cur.i - goal.i));
+}
+
+int Search::Euclidean(Coordinates cur, Coordinates goal) const
+{
+    // c_hv * sqrt(dx * dx + dy * dy)
+
+    return C_HV * sqrt((goal.i - cur.i) * (goal.i - cur.i) + (goal.j - cur.j));
+}
+
+int Search::Chebyshev(Coordinates cur, Coordinates goal) const
+{
+    // max(dx, dy)
+
+    return std::max(abs(cur.i - goal.i), abs(cur.j - goal.j));
+}
+
+int Search::HeuristicWeight() const
+{
+    return 1;
+}
+
+int Search::Heuristic(Coordinates cur, Coordinates goal, const EnvironmentOptions &options) const
+{
+    if (options.metrictype == 0) {
+        return Diagonal(cur, goal);
+    } else if (options.metrictype == 1) {
+        return Manhattan(cur, goal);
+    } else if (options.metrictype == 2) {
+        return Euclidean(cur, goal);
+    } else if (options.metrictype == 3) {
+        return Chebyshev(cur, goal);
+    }
+    return 0;
+}
 
 std::optional<Node> Search::GetNeighbours(Node& v, int i, int j, const Map &map, const EnvironmentOptions &options)
 {
@@ -18,11 +66,11 @@ std::optional<Node> Search::GetNeighbours(Node& v, int i, int j, const Map &map,
                 bool f1 = map.CellOnGridAndIsTraversable(v.i, v.j + j);
                 bool f2 = map.CellOnGridAndIsTraversable(v.i + i, v.j);
                 if ((options.cutcorners && ((!f1 && !f2 && options.allowsqueeze) || (f1 && !f2) || (!f1 && f2))) || (f1 && f2)) {
-                    return Node{v.i + i, v.j + j, v.g + SQRT_TWO, 0, &v};
+                    return Node{v.i + i, v.j + j, 0, v.g + C_D, 0, &v};
                 } 
             }
         } else {
-            return Node{v.i + i, v.j + j, v.g + 1, 0, &v};
+            return Node{v.i + i, v.j + j, 0, v.g + C_HV, 0, &v};
         }
     }
     return std::nullopt;
@@ -45,7 +93,7 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
 
     Node* searchedGoal = nullptr;
 
-    open.push_back(Node(start.i, start.j, 0, 0, nullptr));
+    open.push_back(Node(start.i, start.j, 0, 0, 0, nullptr));
     while (!open.empty()) {
         ++cntSt;
         auto l = std::min_element(open.begin(), open.end());
@@ -107,7 +155,6 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
     sresult.lppath = &lppath;
     return sresult;
 }
-
 /*void Search::makePrimaryPath(Node curNode)
 {
     //need to implement
