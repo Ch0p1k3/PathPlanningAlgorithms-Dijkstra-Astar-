@@ -11,40 +11,40 @@ Search::Search()
 
 Search::~Search() {}
 
-int Search::Diagonal(Coordinates cur, Coordinates goal) const
+double Search::Diagonal(Coordinates cur, Coordinates goal) const
 {
     // c_hv * |dx - dy| + c_d * min(dx, dy)
 
     return C_HV * abs(abs(goal.i - cur.i) - abs(goal.j - cur.j)) + C_D * std::min(abs(goal.i - cur.i), abs(goal.j - cur.j));
 }
 
-int Search::Manhattan(Coordinates cur, Coordinates goal) const
+double Search::Manhattan(Coordinates cur, Coordinates goal) const
 {
     // c_hv * (dx + dy)
 
     return C_HV * (abs(cur.i - goal.i) + abs(cur.i - goal.i));
 }
 
-int Search::Euclidean(Coordinates cur, Coordinates goal) const
+double Search::Euclidean(Coordinates cur, Coordinates goal) const
 {
     // c_hv * sqrt(dx * dx + dy * dy)
 
     return C_HV * sqrt((goal.i - cur.i) * (goal.i - cur.i) + (goal.j - cur.j));
 }
 
-int Search::Chebyshev(Coordinates cur, Coordinates goal) const
+double Search::Chebyshev(Coordinates cur, Coordinates goal) const
 {
     // max(dx, dy)
 
     return std::max(abs(cur.i - goal.i), abs(cur.j - goal.j));
 }
 
-int Search::HeuristicWeight() const
+double Search::HeuristicWeight() const
 {
-    return 1;
+    return 1.;
 }
 
-int Search::Heuristic(Coordinates cur, Coordinates goal, const EnvironmentOptions &options) const
+double Search::Heuristic(Coordinates cur, Coordinates goal, const EnvironmentOptions &options) const
 {
     if (options.metrictype == 0) {
         return Diagonal(cur, goal);
