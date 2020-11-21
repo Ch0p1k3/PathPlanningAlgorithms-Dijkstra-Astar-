@@ -88,7 +88,7 @@ For more detailed output:
 ctest -C {Debug|Release} --output-on-failure
 ```
 ## Input and output
-Input files
+# Input files
 
 Input files are an XML files with a specific structure.
 Input file should contain:
