@@ -1,0 +1,259 @@
+Start testing: Nov 22 00:53 RTZ 2 (çèìà)
+----------------------------------------------------------
+1/12 Testing: Test1
+1/12 Test: Test1
+Command: "D:/Projects/PathPlanningAlgorithms/Tests/testbench.exe" "D:/Projects/PathPlanningAlgorithms/TestData/0_test.xml"
+Directory: D:/Projects/PathPlanningAlgorithms/Tests
+"Test1" start time: Nov 22 00:53 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+tiny
+Warning! Value of 'logpath' tag is missing!
+Value of 'logpath' tag was defined to 'current directory'.
+Warning! Value of 'logfilename' tag is missing.
+Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"Test1" end time: Nov 22 00:53 RTZ 2 (çèìà)
+"Test1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/12 Testing: Test2
+2/12 Test: Test2
+Command: "D:/Projects/PathPlanningAlgorithms/Tests/testbench.exe" "D:/Projects/PathPlanningAlgorithms/TestData/1_test.xml"
+Directory: D:/Projects/PathPlanningAlgorithms/Tests
+"Test2" start time: Nov 22 00:53 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+tiny
+Warning! Value of 'logpath' tag is missing!
+Value of 'logpath' tag was defined to 'current directory'.
+Warning! Value of 'logfilename' tag is missing.
+Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"Test2" end time: Nov 22 00:53 RTZ 2 (çèìà)
+"Test2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/12 Testing: Test3
+3/12 Test: Test3
+Command: "D:/Projects/PathPlanningAlgorithms/Tests/testbench.exe" "D:/Projects/PathPlanningAlgorithms/TestData/2_test.xml"
+Directory: D:/Projects/PathPlanningAlgorithms/Tests
+"Test3" start time: Nov 22 00:53 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Warning! Value of'metrictype' is not correctly specified.
+Value of 'metrictype' was defined to 'euclidean'
+tiny
+Warning! Value of 'logpath' tag is missing!
+Value of 'logpath' tag was defined to 'current directory'.
+Warning! Value of 'logfilename' tag is missing.
+Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"Test3" end time: Nov 22 00:53 RTZ 2 (çèìà)
+"Test3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/12 Testing: Test4
+4/12 Test: Test4
+Command: "D:/Projects/PathPlanningAlgorithms/Tests/testbench.exe" "D:/Projects/PathPlanningAlgorithms/TestData/3_test.xml"
+Directory: D:/Projects/PathPlanningAlgorithms/Tests
+"Test4" start time: Nov 22 00:53 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Warning! Value of'metrictype' is not correctly specified.
+Value of 'metrictype' was defined to 'euclidean'
+tiny
+Warning! Value of 'logpath' tag is missing!
+Value of 'logpath' tag was defined to 'current directory'.
+Warning! Value of 'logfilename' tag is missing.
+Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"Test4" end time: Nov 22 00:53 RTZ 2 (çèìà)
+"Test4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/12 Testing: Test5
+5/12 Test: Test5
+Command: "D:/Projects/PathPlanningAlgorithms/Tests/testbench.exe" "D:/Projects/PathPlanningAlgorithms/TestData/4_test.xml"
+Directory: D:/Projects/PathPlanningAlgorithms/Tests
+"Test5" start time: Nov 22 00:53 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Warning! Value of'metrictype' is not correctly specified.
+Value of 'metrictype' was defined to 'euclidean'
+tiny
+Warning! Value of 'logpath' tag is missing!
+Value of 'logpath' tag was defined to 'current directory'.
+Warning! Value of 'logfilename' tag is missing.
+Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"Test5" end time: Nov 22 00:53 RTZ 2 (çèìà)
+"Test5" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/12 Testing: Test6
+6/12 Test: Test6
+Command: "D:/Projects/PathPlanningAlgorithms/Tests/testbench.exe" "D:/Projects/PathPlanningAlgorithms/TestData/5_test.xml"
+Directory: D:/Projects/PathPlanningAlgorithms/Tests
+"Test6" start time: Nov 22 00:53 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Warning! Value of'metrictype' is not correctly specified.
+Value of 'metrictype' was defined to 'euclidean'
+tiny
+Warning! Value of 'logpath' tag is missing!
+Value of 'logpath' tag was defined to 'current directory'.
+Warning! Value of 'logfilename' tag is missing.
+Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"Test6" end time: Nov 22 00:53 RTZ 2 (çèìà)
+"Test6" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/12 Testing: Test7
+7/12 Test: Test7
+Command: "D:/Projects/PathPlanningAlgorithms/Tests/testbench.exe" "D:/Projects/PathPlanningAlgorithms/TestData/6_test.xml"
+Directory: D:/Projects/PathPlanningAlgorithms/Tests
+"Test7" start time: Nov 22 00:53 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Warning! Value of'metrictype' is not correctly specified.
+Value of 'metrictype' was defined to 'euclidean'
+tiny
+Warning! Value of 'logpath' tag is missing!
+Value of 'logpath' tag was defined to 'current directory'.
+Warning! Value of 'logfilename' tag is missing.
+Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"Test7" end time: Nov 22 00:53 RTZ 2 (çèìà)
+"Test7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/12 Testing: Test8
+8/12 Test: Test8
+Command: "D:/Projects/PathPlanningAlgorithms/Tests/testbench.exe" "D:/Projects/PathPlanningAlgorithms/TestData/7_test.xml"
+Directory: D:/Projects/PathPlanningAlgorithms/Tests
+"Test8" start time: Nov 22 00:53 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Warning! Value of'metrictype' is not correctly specified.
+Value of 'metrictype' was defined to 'euclidean'
+tiny
+Warning! Value of 'logpath' tag is missing!
+Value of 'logpath' tag was defined to 'current directory'.
+Warning! Value of 'logfilename' tag is missing.
+Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"Test8" end time: Nov 22 00:53 RTZ 2 (çèìà)
+"Test8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/12 Testing: Test9
+9/12 Test: Test9
+Command: "D:/Projects/PathPlanningAlgorithms/Tests/testbench.exe" "D:/Projects/PathPlanningAlgorithms/TestData/8_test.xml"
+Directory: D:/Projects/PathPlanningAlgorithms/Tests
+"Test9" start time: Nov 22 00:53 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Warning! Value of'metrictype' is not correctly specified.
+Value of 'metrictype' was defined to 'euclidean'
+tiny
+Warning! Value of 'logpath' tag is missing!
+Value of 'logpath' tag was defined to 'current directory'.
+Warning! Value of 'logfilename' tag is missing.
+Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"Test9" end time: Nov 22 00:53 RTZ 2 (çèìà)
+"Test9" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/12 Testing: Test10
+10/12 Test: Test10
+Command: "D:/Projects/PathPlanningAlgorithms/Tests/testbench.exe" "D:/Projects/PathPlanningAlgorithms/TestData/9_test.xml"
+Directory: D:/Projects/PathPlanningAlgorithms/Tests
+"Test10" start time: Nov 22 00:53 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Warning! Value of'metrictype' is not correctly specified.
+Value of 'metrictype' was defined to 'euclidean'
+tiny
+Warning! Value of 'logpath' tag is missing!
+Value of 'logpath' tag was defined to 'current directory'.
+Warning! Value of 'logfilename' tag is missing.
+Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"Test10" end time: Nov 22 00:53 RTZ 2 (çèìà)
+"Test10" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/12 Testing: Test11
+11/12 Test: Test11
+Command: "D:/Projects/PathPlanningAlgorithms/Tests/testbench.exe" "D:/Projects/PathPlanningAlgorithms/TestData/A_test.xml"
+Directory: D:/Projects/PathPlanningAlgorithms/Tests
+"Test11" start time: Nov 22 00:53 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+tiny
+Warning! Value of 'logpath' tag is missing!
+Value of 'logpath' tag was defined to 'current directory'.
+Warning! Value of 'logfilename' tag is missing.
+Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"Test11" end time: Nov 22 00:53 RTZ 2 (çèìà)
+"Test11" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/12 Testing: Test12
+12/12 Test: Test12
+Command: "D:/Projects/PathPlanningAlgorithms/Tests/testbench.exe" "D:/Projects/PathPlanningAlgorithms/TestData/B_test.xml"
+Directory: D:/Projects/PathPlanningAlgorithms/Tests
+"Test12" start time: Nov 22 00:53 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+tiny
+Warning! Value of 'logpath' tag is missing!
+Value of 'logpath' tag was defined to 'current directory'.
+Warning! Value of 'logfilename' tag is missing.
+Value of 'logfilename' tag was defined to default (original filename +'_log' + original file extension.
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"Test12" end time: Nov 22 00:53 RTZ 2 (çèìà)
+"Test12" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 22 00:53 RTZ 2 (çèìà)

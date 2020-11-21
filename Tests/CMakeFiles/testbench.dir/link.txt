@@ -1,0 +1,3 @@
+C:\msys64\mingw64\bin\cmake.exe -E rm -f CMakeFiles\testbench.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe cr CMakeFiles\testbench.dir/objects.a @CMakeFiles\testbench.dir\objects1.rsp
+C:\msys64\mingw64\bin\g++.exe  -std=c++17 -O2 -Wall -Wextra -static -static-libgcc -static-libstdc++ -O3 -DNDEBUG   -Wl,--whole-archive CMakeFiles\testbench.dir/objects.a -Wl,--no-whole-archive  -o testbench.exe -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\testbench.dir\linklibs.rsp

@@ -24,45 +24,22 @@
 	ProcessorClockFrequency="2592"
 	>
 	<Testing>
-		<StartDateTime>Nov 22 00:27 RTZ 2 ([NON-UTF-8-BYTE-0xE7][NON-UTF-8-BYTE-0xE8][NON-UTF-8-BYTE-0xEC][NON-UTF-8-BYTE-0xE0])</StartDateTime>
-		<StartTestTime>1605994026</StartTestTime>
+		<StartDateTime>Nov 22 01:06 RTZ 2 ([NON-UTF-8-BYTE-0xE7][NON-UTF-8-BYTE-0xE8][NON-UTF-8-BYTE-0xEC][NON-UTF-8-BYTE-0xE0])</StartDateTime>
+		<StartTestTime>1605996380</StartTestTime>
 		<TestList>
-			<Test>./Tests/Test12</Test>
 			<Test>./Tests/Test9</Test>
-			<Test>./Tests/Test11</Test>
-			<Test>./Tests/Test3</Test>
-			<Test>./Tests/Test4</Test>
-			<Test>./Tests/Test8</Test>
-			<Test>./Tests/Test10</Test>
-			<Test>./Tests/Test5</Test>
-			<Test>./Tests/Test1</Test>
-			<Test>./Tests/Test2</Test>
-			<Test>./Tests/Test7</Test>
 			<Test>./Tests/Test6</Test>
+			<Test>./Tests/Test1</Test>
+			<Test>./Tests/Test8</Test>
+			<Test>./Tests/Test11</Test>
+			<Test>./Tests/Test10</Test>
+			<Test>./Tests/Test4</Test>
+			<Test>./Tests/Test7</Test>
+			<Test>./Tests/Test5</Test>
+			<Test>./Tests/Test12</Test>
+			<Test>./Tests/Test2</Test>
+			<Test>./Tests/Test3</Test>
 		</TestList>
-		<Test Status="passed">
-			<Name>Test12</Name>
-			<Path>./Tests</Path>
-			<FullName>./Tests/Test12</FullName>
-			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/B_test.xml"</FullCommandLine>
-			<Results>
-				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.330746</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="numeric/double" name="Processors">
-					<Value>1</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Completion Status">
-					<Value>Completed</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Command Line">
-					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/B_test.xml"</Value>
-				</NamedMeasurement>
-				<Measurement>
-					<Value encoding="base64" compression="gzip">eJx9zUEKAjEMheF9T/FcVRjocXQpYZrWQCeVNkXn9o4LFw6Mu0C+x2+iq7tSU9F8woXKYNQEX2p+kN09jDKkY5HeP8QdkCd1RE6iHGEVfh6tsRqiNJ6tttWHg0ySwkoL71PB/WG73HbSKIZzbZJFqeDLMfnbtvaY8PMDv4y1S9Xg3ijhWqo=</Value>
-				</Measurement>
-			</Results>
-		</Test>
 		<Test Status="passed">
 			<Name>Test9</Name>
 			<Path>./Tests</Path>
@@ -70,7 +47,7 @@
 			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/8_test.xml"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.645633</Value>
+					<Value>0.191331</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -87,13 +64,13 @@
 			</Results>
 		</Test>
 		<Test Status="passed">
-			<Name>Test11</Name>
+			<Name>Test6</Name>
 			<Path>./Tests</Path>
-			<FullName>./Tests/Test11</FullName>
-			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/A_test.xml"</FullCommandLine>
+			<FullName>./Tests/Test6</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/5_test.xml"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.620043</Value>
+					<Value>0.189194</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -102,122 +79,7 @@
 					<Value>Completed</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="text/string" name="Command Line">
-					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/A_test.xml"</Value>
-				</NamedMeasurement>
-				<Measurement>
-					<Value encoding="base64" compression="gzip">eJx9zUEKAjEMheF9T/FcVRjocXQpYZrWQCeVNkXn9o4LFw6Mu0C+x2+iq7tSU9F8woXKYNQEX2p+kN09jDKkY5HeP8QdkCd1RE6iHGEVfh6tsRqiNJ6tttWHg0ySwkoL71PB/WG73HbSKIZzbZJFqeDLMfnbtvaY8PMDv4y1S9Xg3ijhWqo=</Value>
-				</Measurement>
-			</Results>
-		</Test>
-		<Test Status="passed">
-			<Name>Test3</Name>
-			<Path>./Tests</Path>
-			<FullName>./Tests/Test3</FullName>
-			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/2_test.xml"</FullCommandLine>
-			<Results>
-				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.611716</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="numeric/double" name="Processors">
-					<Value>1</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Completion Status">
-					<Value>Completed</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Command Line">
-					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/2_test.xml"</Value>
-				</NamedMeasurement>
-				<Measurement>
-					<Value encoding="base64" compression="gzip">eJx9jjEKwzAMRXef4ndSoZDjNGMRtpIKHDnYCm1u32To0EC6CfQe7/dcTW284M55EZSBJvGq0ddZCNpgxRFLrRI9r2izRB1UUhe+An6MFzckGdQkwQtIlpg1CRsFV1tDf+yBchln9ifBedyLk7a2I+EEOSbisq0zR9J9ZKkrdSeZQbMYT3JMdeEPdshtJy/ZcS1VRzXO+OK40WOzCTf8/CBvF2tarAsfGWSA1A==</Value>
-				</Measurement>
-			</Results>
-		</Test>
-		<Test Status="passed">
-			<Name>Test4</Name>
-			<Path>./Tests</Path>
-			<FullName>./Tests/Test4</FullName>
-			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/3_test.xml"</FullCommandLine>
-			<Results>
-				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.63824</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="numeric/double" name="Processors">
-					<Value>1</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Completion Status">
-					<Value>Completed</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Command Line">
-					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/3_test.xml"</Value>
-				</NamedMeasurement>
-				<Measurement>
-					<Value encoding="base64" compression="gzip">eJx9jjEKwzAMRXef4ndSoZDjNGMRtpIKHDnYCm1u32To0EC6CfQe7/dcTW284M55EZSBJvGq0ddZCNpgxRFLrRI9r2izRB1UUhe+An6MFzckGdQkwQtIlpg1CRsFV1tDf+yBchln9ifBedyLk7a2I+EEOSbisq0zR9J9ZKkrdSeZQbMYT3JMdeEPdshtJy/ZcS1VRzXO+OK40WOzCTf8/CBvF2tarAsfGWSA1A==</Value>
-				</Measurement>
-			</Results>
-		</Test>
-		<Test Status="passed">
-			<Name>Test8</Name>
-			<Path>./Tests</Path>
-			<FullName>./Tests/Test8</FullName>
-			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/7_test.xml"</FullCommandLine>
-			<Results>
-				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.688487</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="numeric/double" name="Processors">
-					<Value>1</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Completion Status">
-					<Value>Completed</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Command Line">
-					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/7_test.xml"</Value>
-				</NamedMeasurement>
-				<Measurement>
-					<Value encoding="base64" compression="gzip">eJx9jjEKwzAMRXef4ndSoZDjNGMRtpIKHDnYCm1u32To0EC6CfQe7/dcTW284M55EZSBJvGq0ddZCNpgxRFLrRI9r2izRB1UUhe+An6MFzckGdQkwQtIlpg1CRsFV1tDf+yBchln9ifBedyLk7a2I+EEOSbisq0zR9J9ZKkrdSeZQbMYT3JMdeEPdshtJy/ZcS1VRzXO+OK40WOzCTf8/CBvF2tarAsfGWSA1A==</Value>
-				</Measurement>
-			</Results>
-		</Test>
-		<Test Status="passed">
-			<Name>Test10</Name>
-			<Path>./Tests</Path>
-			<FullName>./Tests/Test10</FullName>
-			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/9_test.xml"</FullCommandLine>
-			<Results>
-				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.631534</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="numeric/double" name="Processors">
-					<Value>1</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Completion Status">
-					<Value>Completed</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Command Line">
-					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/9_test.xml"</Value>
-				</NamedMeasurement>
-				<Measurement>
-					<Value encoding="base64" compression="gzip">eJx9jjEKwzAMRXef4ndSoZDjNGMRtpIKHDnYCm1u32To0EC6CfQe7/dcTW284M55EZSBJvGq0ddZCNpgxRFLrRI9r2izRB1UUhe+An6MFzckGdQkwQtIlpg1CRsFV1tDf+yBchln9ifBedyLk7a2I+EEOSbisq0zR9J9ZKkrdSeZQbMYT3JMdeEPdshtJy/ZcS1VRzXO+OK40WOzCTf8/CBvF2tarAsfGWSA1A==</Value>
-				</Measurement>
-			</Results>
-		</Test>
-		<Test Status="passed">
-			<Name>Test5</Name>
-			<Path>./Tests</Path>
-			<FullName>./Tests/Test5</FullName>
-			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/4_test.xml"</FullCommandLine>
-			<Results>
-				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.658432</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="numeric/double" name="Processors">
-					<Value>1</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Completion Status">
-					<Value>Completed</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Command Line">
-					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/4_test.xml"</Value>
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/5_test.xml"</Value>
 				</NamedMeasurement>
 				<Measurement>
 					<Value encoding="base64" compression="gzip">eJx9jjEKwzAMRXef4ndSoZDjNGMRtpIKHDnYCm1u32To0EC6CfQe7/dcTW284M55EZSBJvGq0ddZCNpgxRFLrRI9r2izRB1UUhe+An6MFzckGdQkwQtIlpg1CRsFV1tDf+yBchln9ifBedyLk7a2I+EEOSbisq0zR9J9ZKkrdSeZQbMYT3JMdeEPdshtJy/ZcS1VRzXO+OK40WOzCTf8/CBvF2tarAsfGWSA1A==</Value>
@@ -231,7 +93,7 @@
 			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/0_test.xml"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.653574</Value>
+					<Value>0.182335</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -248,13 +110,13 @@
 			</Results>
 		</Test>
 		<Test Status="passed">
-			<Name>Test2</Name>
+			<Name>Test8</Name>
 			<Path>./Tests</Path>
-			<FullName>./Tests/Test2</FullName>
-			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/1_test.xml"</FullCommandLine>
+			<FullName>./Tests/Test8</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/7_test.xml"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.65543</Value>
+					<Value>0.209274</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -263,10 +125,79 @@
 					<Value>Completed</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="text/string" name="Command Line">
-					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/1_test.xml"</Value>
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/7_test.xml"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJx9jjEKwzAMRXef4ndSoZDjNGMRtpIKHDnYCm1u32To0EC6CfQe7/dcTW284M55EZSBJvGq0ddZCNpgxRFLrRI9r2izRB1UUhe+An6MFzckGdQkwQtIlpg1CRsFV1tDf+yBchln9ifBedyLk7a2I+EEOSbisq0zR9J9ZKkrdSeZQbMYT3JMdeEPdshtJy/ZcS1VRzXO+OK40WOzCTf8/CBvF2tarAsfGWSA1A==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Test11</Name>
+			<Path>./Tests</Path>
+			<FullName>./Tests/Test11</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/A_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.189071</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/A_test.xml"</Value>
 				</NamedMeasurement>
 				<Measurement>
 					<Value encoding="base64" compression="gzip">eJx9zUEKAjEMheF9T/FcVRjocXQpYZrWQCeVNkXn9o4LFw6Mu0C+x2+iq7tSU9F8woXKYNQEX2p+kN09jDKkY5HeP8QdkCd1RE6iHGEVfh6tsRqiNJ6tttWHg0ySwkoL71PB/WG73HbSKIZzbZJFqeDLMfnbtvaY8PMDv4y1S9Xg3ijhWqo=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Test10</Name>
+			<Path>./Tests</Path>
+			<FullName>./Tests/Test10</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/9_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.194356</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/9_test.xml"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJx9jjEKwzAMRXef4ndSoZDjNGMRtpIKHDnYCm1u32To0EC6CfQe7/dcTW284M55EZSBJvGq0ddZCNpgxRFLrRI9r2izRB1UUhe+An6MFzckGdQkwQtIlpg1CRsFV1tDf+yBchln9ifBedyLk7a2I+EEOSbisq0zR9J9ZKkrdSeZQbMYT3JMdeEPdshtJy/ZcS1VRzXO+OK40WOzCTf8/CBvF2tarAsfGWSA1A==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Test4</Name>
+			<Path>./Tests</Path>
+			<FullName>./Tests/Test4</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/3_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.216953</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/3_test.xml"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJx9jjEKwzAMRXef4ndSoZDjNGMRtpIKHDnYCm1u32To0EC6CfQe7/dcTW284M55EZSBJvGq0ddZCNpgxRFLrRI9r2izRB1UUhe+An6MFzckGdQkwQtIlpg1CRsFV1tDf+yBchln9ifBedyLk7a2I+EEOSbisq0zR9J9ZKkrdSeZQbMYT3JMdeEPdshtJy/ZcS1VRzXO+OK40WOzCTf8/CBvF2tarAsfGWSA1A==</Value>
 				</Measurement>
 			</Results>
 		</Test>
@@ -277,7 +208,7 @@
 			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/6_test.xml"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.674244</Value>
+					<Value>0.220141</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -294,13 +225,13 @@
 			</Results>
 		</Test>
 		<Test Status="passed">
-			<Name>Test6</Name>
+			<Name>Test5</Name>
 			<Path>./Tests</Path>
-			<FullName>./Tests/Test6</FullName>
-			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/5_test.xml"</FullCommandLine>
+			<FullName>./Tests/Test5</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/4_test.xml"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.79897</Value>
+					<Value>0.235572</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -309,15 +240,84 @@
 					<Value>Completed</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="text/string" name="Command Line">
-					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/5_test.xml"</Value>
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/4_test.xml"</Value>
 				</NamedMeasurement>
 				<Measurement>
 					<Value encoding="base64" compression="gzip">eJx9jjEKwzAMRXef4ndSoZDjNGMRtpIKHDnYCm1u32To0EC6CfQe7/dcTW284M55EZSBJvGq0ddZCNpgxRFLrRI9r2izRB1UUhe+An6MFzckGdQkwQtIlpg1CRsFV1tDf+yBchln9ifBedyLk7a2I+EEOSbisq0zR9J9ZKkrdSeZQbMYT3JMdeEPdshtJy/ZcS1VRzXO+OK40WOzCTf8/CBvF2tarAsfGWSA1A==</Value>
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Nov 22 00:27 RTZ 2 ([NON-UTF-8-BYTE-0xE7][NON-UTF-8-BYTE-0xE8][NON-UTF-8-BYTE-0xEC][NON-UTF-8-BYTE-0xE0])</EndDateTime>
-		<EndTestTime>1605994027</EndTestTime>
+		<Test Status="passed">
+			<Name>Test12</Name>
+			<Path>./Tests</Path>
+			<FullName>./Tests/Test12</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/B_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.206647</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/B_test.xml"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJx9zUEKAjEMheF9T/FcVRjocXQpYZrWQCeVNkXn9o4LFw6Mu0C+x2+iq7tSU9F8woXKYNQEX2p+kN09jDKkY5HeP8QdkCd1RE6iHGEVfh6tsRqiNJ6tttWHg0ySwkoL71PB/WG73HbSKIZzbZJFqeDLMfnbtvaY8PMDv4y1S9Xg3ijhWqo=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Test2</Name>
+			<Path>./Tests</Path>
+			<FullName>./Tests/Test2</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/1_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.218228</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/1_test.xml"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJx9zUEKAjEMheF9T/FcVRjocXQpYZrWQCeVNkXn9o4LFw6Mu0C+x2+iq7tSU9F8woXKYNQEX2p+kN09jDKkY5HeP8QdkCd1RE6iHGEVfh6tsRqiNJ6tttWHg0ySwkoL71PB/WG73HbSKIZzbZJFqeDLMfnbtvaY8PMDv4y1S9Xg3ijhWqo=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Test3</Name>
+			<Path>./Tests</Path>
+			<FullName>./Tests/Test3</FullName>
+			<FullCommandLine>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/2_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.22808</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Projects\PathPlanningAlgorithms\Build\Tests\testbench.exe "D:/Projects/PathPlanningAlgorithms/TestData/2_test.xml"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJx9jjEKwzAMRXef4ndSoZDjNGMRtpIKHDnYCm1u32To0EC6CfQe7/dcTW284M55EZSBJvGq0ddZCNpgxRFLrRI9r2izRB1UUhe+An6MFzckGdQkwQtIlpg1CRsFV1tDf+yBchln9ifBedyLk7a2I+EEOSbisq0zR9J9ZKkrdSeZQbMYT3JMdeEPdshtJy/ZcS1VRzXO+OK40WOzCTf8/CBvF2tarAsfGWSA1A==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Nov 22 01:06 RTZ 2 ([NON-UTF-8-BYTE-0xE7][NON-UTF-8-BYTE-0xE8][NON-UTF-8-BYTE-0xEC][NON-UTF-8-BYTE-0xE0])</EndDateTime>
+		<EndTestTime>1605996380</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

@@ -6,31 +6,11 @@
 
 #IncludeRegexTransform: 
 
-D:/Projects/PathPlanningAlgorithms/Src/config.cpp
-config.h
-D:/Projects/PathPlanningAlgorithms/Src/config.h
-gl_const.h
-D:/Projects/PathPlanningAlgorithms/Src/gl_const.h
-tinyxml2.h
-D:/Projects/PathPlanningAlgorithms/Src/tinyxml2.h
-iostream
--
-sstream
--
-algorithm
--
-math.h
--
-
 D:/Projects/PathPlanningAlgorithms/Src/config.h
 string
 -
 
 D:/Projects/PathPlanningAlgorithms/Src/coordinates.h
-
-D:/Projects/PathPlanningAlgorithms/Src/environmentoptions.cpp
-environmentoptions.h
-D:/Projects/PathPlanningAlgorithms/Src/environmentoptions.h
 
 D:/Projects/PathPlanningAlgorithms/Src/environmentoptions.h
 gl_const.h
@@ -51,10 +31,6 @@ list
 D:/Projects/PathPlanningAlgorithms/Src/main.cpp
 mission.h
 D:/Projects/PathPlanningAlgorithms/Src/mission.h
-
-D:/Projects/PathPlanningAlgorithms/Src/map.cpp
-map.h
-D:/Projects/PathPlanningAlgorithms/Src/map.h
 
 D:/Projects/PathPlanningAlgorithms/Src/map.h
 iostream
@@ -141,20 +117,6 @@ list
 -
 node.h
 D:/Projects/PathPlanningAlgorithms/Src/node.h
-
-D:/Projects/PathPlanningAlgorithms/Src/tinyxml2.cpp
-tinyxml2.h
-D:/Projects/PathPlanningAlgorithms/Src/tinyxml2.h
-new
--
-stddef.h
--
-stdarg.h
--
-cstddef
--
-cstdarg
--
 
 D:/Projects/PathPlanningAlgorithms/Src/tinyxml2.h
 ctype.h
