@@ -41,6 +41,10 @@ class Search
 
         double HeuristicWeight() const;
 
+        void makePrimaryPath(Node*);
+
+        void makeSecondaryPath();
+
         std::optional<Node> GetNeighbours(Node&, int, int, const Map &Map, const EnvironmentOptions &options);
 };
 #endif

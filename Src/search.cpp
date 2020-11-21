@@ -148,12 +148,26 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
     sresult.nodescreated =  open.size() + cntClose;
     sresult.numberofsteps = cntSt;
     if (sresult.pathfound) {
-        while (searchedGoal) {
-            lppath.push_front(*searchedGoal);
-            searchedGoal = searchedGoal->parent;
-        }
-        
-        if (!lppath.empty()) {
+        makePrimaryPath(searchedGoal);
+        makeSecondaryPath();
+    }
+    sresult.time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - time).count();
+    sresult.hppath = &hppath;
+    sresult.lppath = &lppath;
+    return sresult;
+}
+
+void Search::makePrimaryPath(Node* curNode)
+{
+    while (curNode) {
+        lppath.push_front(*curNode);
+        curNode = curNode->parent;
+    }
+}
+
+void Search::makeSecondaryPath()
+{
+    if (!lppath.empty()) {
             hppath.push_front(lppath.front());
             if (lppath.size() != 1) {
                 auto cur = std::next(lppath.begin());
@@ -167,18 +181,4 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
                 }
             }
         }
-    }
-    sresult.time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - time).count();
-    sresult.hppath = &hppath;
-    sresult.lppath = &lppath;
-    return sresult;
 }
-/*void Search::makePrimaryPath(Node curNode)
-{
-    //need to implement
-}*/
-
-/*void Search::makeSecondaryPath()
-{
-    //need to implement
-}*/
