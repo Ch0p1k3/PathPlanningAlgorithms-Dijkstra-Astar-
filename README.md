@@ -1,7 +1,7 @@
 # PathPlanningProject
-##Description
+## Description
 Project in development...
-##Getting started
+## Getting started
 To build and run the project you should have compiler in C++17 standart.
 The project can be build in two ways:
 - Using QtCreator and qmake;
