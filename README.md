@@ -85,7 +85,7 @@ mingw32-make install
 
 Launching:
 ```cmd
-cd ../../Bin/{Debug|Release}/
+cd Bin/{Debug|Release}/
 Ivan_Luchsh_ASearch.exe ../../Examples/example.xml
 ```
 
