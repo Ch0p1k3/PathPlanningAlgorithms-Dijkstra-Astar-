@@ -2,9 +2,9 @@
 ## Description
 Project in development...
 ## Getting started
-To build and run the project you should have compiler in C++17 standart.
+To build and run the project you should have compiler on C++17 standart.
 
-# Installing
+## Installing
 
 Download current repository to your local machine. Use
 
@@ -105,8 +105,16 @@ Input file should contain:
   * Tag "algorithm" describes the algrithm options.
     * "searchtype" - the type of the search.
     * "metrictype" - the heuristic for A* algorithm. There are: "diagonal", "manhattan", "euclidean", "chebyshev".
-    * breakingties - ...
-    * "hweight" - the hweight value for A* algorithm.
+    * breakingties - determines the order of opening the vertices when the value of f is equal. There are "g-min" or "g-max".
+    * "hweight" - the hweight value for A* algorithm. For "hweight" = 1 we have classical A*, for >1 is weighted A*(WA*).
+    * "allowdiagonal" - it is allowed to walk diagonally (true or false). If false, then you can only walk horizontally/vertically.
+    * "cutcorners" - it is allowed to walk diagonally if there is an obstacle nearby. Also true or false.
+    * "allowsqueeze" - it is allowed to walk diagonally if there are obstacles on both sides. Also true or false.
+    ![steps](./Images/steps.png)
+  * Tag "options". It is options for the output.
+    * "loglevel" - the value of the output. There are "0.5" and "1". "1" is more verbose output.
+    * "logpath" - the path of the output.
+    * "logfilename" - the name of the output file.
     
 
 ## Mentors
