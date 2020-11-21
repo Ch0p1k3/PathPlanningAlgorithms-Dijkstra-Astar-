@@ -3,6 +3,15 @@
 Project in development...
 ## Getting started
 To build and run the project you should have compiler in C++17 standart.
+
+# Installing
+
+Download current repository to your local machine. Use
+
+```
+git clone https://github.com/Ch0p1k3/PathPlanningAlgorithms
+```
+
 The project can be build in two ways:
 - Using QtCreator and qmake;
 - Using CMake;
@@ -101,6 +110,27 @@ For more detailed output:
 ```
 ctest -C {Debug|Release} --output-on-failure
 ```
+## Input and output
+Input files
+
+Input files are an XML files with a specific structure.
+Input file should contain:
+* Mandatory tag <root>. It describes the parameters.
+  * Tag <map>. It describes the map.
+    * width - the width of the field.
+    * height - the height of the field.
+    * cellsize - ...
+    * startx - a start coordinate x.
+    * starty - a start coordinate y.
+    * finishx - a finish coordinate x.
+    * finishy - a finish coordinate y.
+    * Tag <grid> describes your map, where each line is separated by a <line> tag. 0 is free cell, 1 is obstruction.
+  * Tag <algorithm> describes the algrithm options.
+    * searchtype - the type of the search.
+    * metrictype - the heuristic for A* algorithm. There are: diagonal, manhattan, euclidean, chebyshev.
+    * breakingties - ...
+    * hweight - the hweight value for A* algorithm.
+    
 
 ## Mentors
 **Яковлев Константин Сергеевич**
