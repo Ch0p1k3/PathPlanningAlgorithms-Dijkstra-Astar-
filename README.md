@@ -116,7 +116,7 @@ Input file should contain:
   * An important tag is "summary". His attributes:
     * "numberofsteps" - the number of steps of the algorithm.
     * "nodescreated" - the number of nodes created during the search.
-    * "length" - path length.
+    * "length" - the path length.
     * "length_scaled" = "length" * "cellsize"
     * "time" - running time of the algorithm.
   * "path" - the map of the output(only for 1 "loglevel").
