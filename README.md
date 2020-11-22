@@ -132,3 +132,7 @@ Input file should contain:
 **Дергачев Степан**
 - sadergachev@edu.hse.ru
 - Telegram: @haiot4105
+
+## Me
+**Luchsh Ivan**
+- Telegram: @ch0p1k3
