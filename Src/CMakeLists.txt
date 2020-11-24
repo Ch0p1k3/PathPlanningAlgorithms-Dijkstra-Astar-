@@ -10,9 +10,6 @@ set(HEADERS         config.h
                     searchresult.h
                     tinyxml2.h
                     xmllogger.h
-                    raw_memory.h
-                    dynamic_array.h
-                    binary_heap.h
                     coordinates.h)
 
 set(SOURCES         config.cpp

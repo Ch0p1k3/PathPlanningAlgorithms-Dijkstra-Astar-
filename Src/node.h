@@ -27,7 +27,7 @@ struct Node
     , H(nH)
     , parent(nparent) {}
 
-    bool operator<(const Node& other)
+    bool operator<(const Node& other) const
     {
         return F < other.F;
     }
