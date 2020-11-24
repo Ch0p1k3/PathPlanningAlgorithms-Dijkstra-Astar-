@@ -27,11 +27,11 @@ Input file should contain:
     * Tag "grid" describes your map, where each line is separated by a "line" tag. "0" is free cell, "1" is obstruction.
   * Tag "algorithm" describes the algrithm options.
     * "searchtype" - the type of the search. Arguments are "dijkstra" or "astar". Dijkstra and A* algorithm, respectively.
-    * "metrictype" - the heuristic for A* algorithm. There are: "diagonal", "manhattan", "euclidean", "chebyshev". We have two constants $c_hv=1$ - horizontal / vertical step weight, $c_d=\sqrt{2}$ - diagonal step weight.
-      * Diagonal heuristic formula: $c_hv \cdot |dx - dy| + c_d \cdot min(dx, dy)$
-      * Manhattan heuristic formula: $c_hv \cdot (dx + dy)$
-      * Euclidian heuristic formula: $с_hv \cdot \sqrt{dx \cdot dx + dy \cdot dy}$
-      * Chebushev heuristic formula: $max(dx, dy)$
+    * "metrictype" - the heuristic for A* algorithm. There are: "diagonal", "manhattan", "euclidean", "chebyshev". We have two constants c_hv=1 - horizontal / vertical step weight, c_d=\sqrt{2} - diagonal step weight.
+      * Diagonal heuristic formula: c_hv * |dx - dy| + c_d * min(dx, dy)
+      * Manhattan heuristic formula: c_hv * (dx + dy)
+      * Euclidian heuristic formula: с_hv * sqrt(dx * dx + dy * dy)
+      * Chebushev heuristic formula: max(dx, dy)
     * breakingties - determines the order of opening the vertices when the value of f is equal. There are "g-min" or "g-max".
     * "hweight" - the hweight value for A* algorithm. For "hweight" = 1 we have classical A*, for >1 is weighted A*(WA*).
     * "allowdiagonal" - it is allowed to walk diagonally (true or false). If false, then you can only walk horizontally/vertically.
