@@ -151,7 +151,7 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
         makePrimaryPath(searchedGoal);
         makeSecondaryPath();
     }
-    sresult.time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - time).count();
+    sresult.time = std::chrono::duration<double>(std::chrono::steady_clock::now() - time).count();
     sresult.hppath = &hppath;
     sresult.lppath = &lppath;
     return sresult;
