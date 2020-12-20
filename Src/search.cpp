@@ -39,9 +39,9 @@ double Search::Chebyshev(Coordinates cur, Coordinates goal) const
     return std::max(abs(cur.i - goal.i), abs(cur.j - goal.j));
 }
 
-double Search::HeuristicWeight() const
+double Search::HeuristicWeight(const EnvironmentOptions &options) const
 {
-    return 1.;
+    return options.hweight;
 }
 
 double Search::Heuristic(Coordinates cur, Coordinates goal, const EnvironmentOptions &options) const
@@ -68,7 +68,7 @@ std::optional<Node> Search::GetNeighbours(Node& v, int i, int j, const Map &map,
                 if ((options.cutcorners && ((!f1 && !f2 && options.allowsqueeze) || (f1 && !f2) || (!f1 && f2))) || (f1 && f2)) {
                     return Node
                         { v.i + i
-                        , v.j + j, v.g + C_D + HeuristicWeight() * Heuristic({v.i + i, v.j + j}, map.getGoal(), options)
+                        , v.j + j, v.g + C_D + HeuristicWeight(options) * Heuristic({v.i + i, v.j + j}, map.getGoal(), options)
                         , v.g + C_D
                         , Heuristic({v.i + i, v.j + j}, map.getGoal(), options)
                         , &v};
@@ -77,7 +77,7 @@ std::optional<Node> Search::GetNeighbours(Node& v, int i, int j, const Map &map,
         } else {
             return Node
                         { v.i + i
-                        , v.j + j, v.g + C_HV + HeuristicWeight() * Heuristic({v.i + i, v.j + j}, map.getGoal(), options)
+                        , v.j + j, v.g + C_HV + HeuristicWeight(options) * Heuristic({v.i + i, v.j + j}, map.getGoal(), options)
                         , v.g + C_HV
                         , Heuristic({v.i + i, v.j + j}, map.getGoal(), options)
                         , &v};
@@ -97,8 +97,6 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
     int width = map.getMapWidth();
     int height = map.getMapHeight();
 
-    close.resize(height, std::vector<Node>(width));
-
     size_t cntSt = 0;
 
     Node* searchedGoal = nullptr;
@@ -106,7 +104,7 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
     open.push_back(Node
         (start.i
         , start.j
-        , HeuristicWeight() * Heuristic(start, goal, options)
+        , HeuristicWeight(options) * Heuristic(start, goal, options)
         , 0
         , Heuristic(start, goal, options)
         , nullptr)
@@ -115,20 +113,20 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
     while (!open.empty()) {
         ++cntSt;
         auto l = std::min_element(open.begin(), open.end());
-        close[l->i][l->j] = *l;
+        close[l->i * height + l->j] = *l;
         int inI = l->i, inJ = l->j;
         ++cntClose;
         open.erase(l);
-        auto v = &close[inI][inJ];
+        auto v = &close[inI * height + inJ];
         if (v->i == goal.i && v->j == goal.j) {
-            searchedGoal = &close[v->i][v->j];
+            searchedGoal = &close[v->i * height + v->j];
             break;
         }
         for (int i = -1; i <= 1; ++i) {
             for (int j = -1; j <= 1; ++j) {
                 if (i == 0 && j == 0) continue;
-                if (auto neighbour = GetNeighbours(close[v->i][v->j], i, j, map, options)) {
-                    if (close[neighbour->i][neighbour->j].i == -1) {
+                if (auto neighbour = GetNeighbours(close[v->i * height + v->j], i, j, map, options)) {
+                    if (close.find(neighbour->i * height + neighbour->j) == close.end()) {
                         auto it = std::find_if(open.begin(), open.end(), [neighbour](Node el) {
                             return el.i == neighbour->i && el.j == neighbour->j;
                         });
@@ -149,9 +147,11 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
     sresult.numberofsteps = cntSt;
     if (sresult.pathfound) {
         makePrimaryPath(searchedGoal);
-        makeSecondaryPath();
     }
     sresult.time = std::chrono::duration<double>(std::chrono::steady_clock::now() - time).count();
+    if (sresult.pathfound) {
+        makeSecondaryPath();
+    }
     sresult.hppath = &hppath;
     sresult.lppath = &lppath;
     return sresult;

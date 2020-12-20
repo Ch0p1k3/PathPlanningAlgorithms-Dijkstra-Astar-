@@ -14,6 +14,7 @@
 #include <typeinfo>
 #include <algorithm>
 #include <cmath>
+#include <unordered_map>
 
 class Search
 {
@@ -26,10 +27,10 @@ class Search
         SearchResult                    sresult; //This will store the search result
         std::list<Node>                 lppath, hppath; //
 
-        std::vector<std::vector<Node>> close;
+        std::unordered_map<int, Node> close;
         std::list<Node> open;
 
-        double Heuristic(Coordinates, Coordinates, const EnvironmentOptions&) const;
+        double Heuristic(Coordinates, Coordinates, const EnvironmentOptions &) const;
 
         double Euclidean(Coordinates, Coordinates) const;
 
@@ -39,12 +40,12 @@ class Search
 
         double Diagonal(Coordinates, Coordinates) const;
 
-        double HeuristicWeight() const;
+        double HeuristicWeight(const EnvironmentOptions &) const;
 
         void makePrimaryPath(Node*);
 
         void makeSecondaryPath();
 
-        std::optional<Node> GetNeighbours(Node&, int, int, const Map &Map, const EnvironmentOptions &options);
+        std::optional<Node> GetNeighbours(Node&, int, int, const Map &, const EnvironmentOptions &);
 };
 #endif

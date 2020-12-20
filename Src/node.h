@@ -1,6 +1,7 @@
 #ifndef NODE_H
 #define NODE_H
 #include <memory>
+#include <tuple>
 //That's the data structure for storing a single search node.
 //You MUST store all the intermediate computations occuring during the search
 //incapsulated to Nodes (so NO separate arrays of g-values etc.)
@@ -29,7 +30,7 @@ struct Node
 
     bool operator<(const Node& other) const
     {
-        return F < other.F;
+        return std::tie(F, g, i, j) < std::tie(other.F, g, i, j);
     }
 };
 
