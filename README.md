@@ -27,7 +27,7 @@ Input file should contain:
     * Tag "grid" describes your map, where each line is separated by a "line" tag. "0" is free cell, "1" is obstruction.
   * Tag "algorithm" describes the algrithm options.
     * "searchtype" - the type of the search. Arguments are "dijkstra" or "astar". Dijkstra and A* algorithm, respectively.
-    * "metrictype" - the heuristic for A* algorithm. There are: "diagonal", "manhattan", "euclidean", "chebyshev". We have two constants c_hv=1 - horizontal / vertical step weight, c_d=\sqrt{2} - diagonal step weight.
+    * "metrictype" - the heuristic for A* algorithm. There are: "diagonal", "manhattan", "euclidean", "chebyshev". We have two constants c_hv=1 - horizontal / vertical step weight, c_d=square root of 2 - diagonal step weight.
       * Diagonal heuristic formula: c_hv * |dx - dy| + c_d * min(dx, dy)
       * Manhattan heuristic formula: c_hv * (dx + dy)
       * Euclidian heuristic formula: с_hv * sqrt(dx * dx + dy * dy)
