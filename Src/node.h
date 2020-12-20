@@ -30,7 +30,7 @@ struct Node
 
     bool operator<(const Node& other) const
     {
-        return std::tie(F, g, i, j) < std::tie(other.F, g, i, j);
+        return std::tie(F, g, other.i, other.j) < std::tie(other.F, other.g, i, j);
     }
 };
 

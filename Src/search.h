@@ -28,7 +28,8 @@ class Search
         std::list<Node>                 lppath, hppath; //
 
         std::unordered_map<int, Node> close;
-        std::list<Node> open;
+        std::set<Node> open;
+        std::unordered_map<int, std::set<Node>::iterator> auxiliary_map;
 
         double Heuristic(Coordinates, Coordinates, const EnvironmentOptions &) const;
 

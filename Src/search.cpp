@@ -89,20 +89,20 @@ std::optional<Node> Search::GetNeighbours(Node& v, int i, int j, const Map &map,
 SearchResult Search::startSearch(ILogger *Logger, const Map &map, const EnvironmentOptions &options)
 {
     auto time = std::chrono::steady_clock::now();
-    
-    int cntClose = 0;
 
     Coordinates start = map.getStart();
     Coordinates goal = map.getGoal();
-    int width = map.getMapWidth();
     int height = map.getMapHeight();
 
     size_t cntSt = 0;
 
     Node* searchedGoal = nullptr;
+    
+    open.clear();
+    close.clear();
 
-    open.push_back(Node
-        (start.i
+    open.insert(Node
+        ( start.i
         , start.j
         , HeuristicWeight(options) * Heuristic(start, goal, options)
         , 0
@@ -110,16 +110,18 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
         , nullptr)
     );
 
+    auxiliary_map[start.i * height + start.j] = open.begin();
+
     while (!open.empty()) {
         ++cntSt;
-        auto l = std::min_element(open.begin(), open.end());
+        auto l = open.begin();
         close[l->i * height + l->j] = *l;
         int inI = l->i, inJ = l->j;
-        ++cntClose;
         open.erase(l);
+        auxiliary_map.erase(inI * height + inJ);
         auto v = &close[inI * height + inJ];
         if (v->i == goal.i && v->j == goal.j) {
-            searchedGoal = &close[v->i * height + v->j];
+            searchedGoal = v;
             break;
         }
         for (int i = -1; i <= 1; ++i) {
@@ -127,13 +129,15 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
                 if (i == 0 && j == 0) continue;
                 if (auto neighbour = GetNeighbours(close[v->i * height + v->j], i, j, map, options)) {
                     if (close.find(neighbour->i * height + neighbour->j) == close.end()) {
-                        auto it = std::find_if(open.begin(), open.end(), [neighbour](Node el) {
-                            return el.i == neighbour->i && el.j == neighbour->j;
-                        });
-                        if (it != open.end() && it->g > neighbour->g) {
-                            *it = neighbour.value();
-                        } else if (it == open.end()) {
-                            open.push_back(neighbour.value());
+                        auto it = auxiliary_map.find(neighbour->i * height + neighbour->j);
+                        if (it != auxiliary_map.end() && it->second->g > neighbour->g) {
+                            open.erase(it->second);
+                            auto new_it = open.insert(neighbour.value());
+                            auxiliary_map.erase(it);
+                            auxiliary_map[neighbour->i * height + neighbour->j] = new_it.first;
+                        } else if (it == auxiliary_map.end()) {
+                            auto new_it = open.insert(neighbour.value());
+                            auxiliary_map[neighbour->i * height + neighbour->j] = new_it.first;
                         }
                     }
                 }
@@ -143,7 +147,7 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
 
     sresult.pathfound = (searchedGoal != nullptr);
     sresult.pathlength = sresult.pathfound ? searchedGoal->g : 0;
-    sresult.nodescreated =  open.size() + cntClose;
+    sresult.nodescreated =  open.size() + close.size();
     sresult.numberofsteps = cntSt;
     if (sresult.pathfound) {
         makePrimaryPath(searchedGoal);
@@ -168,17 +172,17 @@ void Search::makePrimaryPath(Node* curNode)
 void Search::makeSecondaryPath()
 {
     if (!lppath.empty()) {
-            hppath.push_front(lppath.front());
-            if (lppath.size() != 1) {
-                auto cur = std::next(lppath.begin());
-                auto prev = lppath.begin();
-                for (auto it = next(lppath.begin(), 2); it != lppath.end(); it = next(it)) {
-                    if (!(it->i - cur->i == cur->i - prev->i && it->j - cur->j == cur->j - prev->j)) {
-                        hppath.push_back(*cur);
-                    }
-                    prev = cur;
-                    cur = it;
+        hppath.push_front(lppath.front());
+        if (lppath.size() != 1) {
+            auto cur = std::next(lppath.begin());
+            auto prev = lppath.begin();
+            for (auto it = next(lppath.begin(), 2); it != lppath.end(); it = next(it)) {
+                if (!(it->i - cur->i == cur->i - prev->i && it->j - cur->j == cur->j - prev->j)) {
+                    hppath.push_back(*cur);
                 }
+                prev = cur;
+                cur = it;
             }
         }
+    }
 }
