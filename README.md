@@ -71,7 +71,7 @@ After selecting a project, you need to set the input file name as a command line
 
 When using CMake, building and launching can be done both from the command line and using various IDEs. Below are the build and run scripts using the command line.
 
-### Linux и Mac
+### Linux and Mac
 Release building:
 ```bash
 cd PathPlanningProject
@@ -130,12 +130,12 @@ ctest -C {Debug|Release} --output-on-failure
 ```
 
 ## Mentors
-**Яковлев Константин Сергеевич**
+**Yakovlev Konstantin Sergeevich**
 - kyakovlev@hse.ru
 - [HSE website](https://www.hse.ru/staff/yakovlev-ks)
 - Telegram: @KonstantinYakovlev
 
-**Дергачев Степан**
+**Dergachev Stepan**
 - sadergachev@edu.hse.ru
 - Telegram: @haiot4105
 
