@@ -1,6 +1,6 @@
 # PathPlanningProject
 ## Description
-Project in development...
+A software project at the Higher School of Economics. Finding the shortest paths(at the moment, the Dijstra's algorithm and A* algorithm are implemented).
 ## Installing
 
 Download current repository to your local machine. Use
