@@ -22,14 +22,14 @@ double Search::Manhattan(Coordinates cur, Coordinates goal) const
 {
     // c_hv * (dx + dy)
 
-    return C_HV * (abs(cur.i - goal.i) + abs(cur.i - goal.i));
+    return C_HV * (abs(cur.i - goal.i) + abs(cur.j - goal.j));
 }
 
 double Search::Euclidean(Coordinates cur, Coordinates goal) const
 {
     // c_hv * sqrt(dx * dx + dy * dy)
 
-    return C_HV * sqrt((goal.i - cur.i) * (goal.i - cur.i) + (goal.j - cur.j));
+    return C_HV * sqrt((goal.i - cur.i) * (goal.i - cur.i) + (goal.j - cur.j) * (goal.j - cur.j));
 }
 
 double Search::Chebyshev(Coordinates cur, Coordinates goal) const
