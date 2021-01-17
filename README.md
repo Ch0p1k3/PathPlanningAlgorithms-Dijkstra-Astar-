@@ -1,4 +1,4 @@
-# PathPlanningProject
+# PathPlanningAlgorithms
 ## Description
 A software project at the Higher School of Economics. Finding the shortest paths(at the moment, the Dijkstra's algorithm and A* algorithm are implemented).
 ## Installing
@@ -74,7 +74,7 @@ When using CMake, building and launching can be done both from the command line 
 ### Linux and Mac
 Release building:
 ```bash
-cd PathPlanningProject
+cd PathPlanningAlgorithms
 cmake -DCMAKE_BUILD_TYPE="Release"
 make
 make install
@@ -82,7 +82,7 @@ make install
 
 Debug building:
 ```bash
-cd PathPlanningProject
+cd PathPlanningAlgorithms
 cmake -DCMAKE_BUILD_TYPE="Debug"
 make
 make install
@@ -97,7 +97,7 @@ cd .Bin/{Debug|Release}/
 ### Windows
 Release building:
 ```cmd
-cd PathPlanningProject
+cd PathPlanningAlgorithms
 set PATH
 cmake -DCMAKE_BUILD_TYPE="Release" -G "MinGW Makefiles"
 mingw32-make
@@ -106,7 +106,7 @@ mingw32-make install
 
 Debug building:
 ```cmd
-cd PathPlanningProject
+cd PathPlanningAlgorithms
 set PATH
 cmake -DCMAKE_BUILD_TYPE="Debug" -G "MinGW Makefiles"
 mingw32-make
@@ -119,7 +119,7 @@ cd Bin/{Debug|Release}/
 Ivan_Luchsh_ASearch.exe ../../Examples/example.xml
 ```
  
-Tests are run from the directory `.../PathPlanningProject` using the command:
+Tests are run from the directory `.../PathPlanningAlgorithms` using the command:
 ```
 ctest -C {Debug|Release}
 ```
