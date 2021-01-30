@@ -27,9 +27,20 @@ class Search
         SearchResult                    sresult; //This will store the search result
         std::list<Node>                 lppath, hppath; //
 
-        std::unordered_map<int, Node> close;
+        struct HashP {
+            template 
+            <typename T1, typename T2>
+            size_t operator()(const std::pair<T1, T2>& e) const
+            {
+                auto v1 = std::hash<T1>{}(e.first);
+                auto v2 = std::hash<T2>{}(e.second);
+                return v1 ^ v2;
+            }
+        };
+
+        std::unordered_map<std::pair<int, int>, Node, HashP> close;
         std::set<Node> open;
-        std::unordered_map<int, std::set<Node>::iterator> auxiliary_map;
+        std::unordered_map<std::pair<int, int>, std::set<Node>::iterator, HashP> auxiliary_map;
 
         double Heuristic(Coordinates, Coordinates, const EnvironmentOptions &) const;
 

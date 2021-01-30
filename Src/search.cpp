@@ -1,7 +1,7 @@
 #include "search.h"
 
 #define PI_CONSTANT 3.14159265359
-#define C_D std::sqrt(2)
+#define C_D std::sqrt(2.)
 #define C_HV 1
 
 Search::Search()
@@ -29,7 +29,7 @@ double Search::Euclidean(Coordinates cur, Coordinates goal) const
 {
     // c_hv * sqrt(dx * dx + dy * dy)
 
-    return C_HV * sqrt((goal.i - cur.i) * (goal.i - cur.i) + (goal.j - cur.j) * (goal.j - cur.j));
+    return C_HV * std::sqrt((goal.i - cur.i) * (goal.i - cur.i) + (goal.j - cur.j) * (goal.j - cur.j));
 }
 
 double Search::Chebyshev(Coordinates cur, Coordinates goal) const
@@ -46,13 +46,13 @@ double Search::HeuristicWeight(const EnvironmentOptions &options) const
 
 double Search::Heuristic(Coordinates cur, Coordinates goal, const EnvironmentOptions &options) const
 {
-    if (options.metrictype == 0) {
+    if (options.metrictype == CN_SP_MT_DIAG) {
         return Diagonal(cur, goal);
-    } else if (options.metrictype == 1) {
+    } else if (options.metrictype == CN_SP_MT_MANH) {
         return Manhattan(cur, goal);
-    } else if (options.metrictype == 2) {
+    } else if (options.metrictype == CN_SP_MT_EUCL) {
         return Euclidean(cur, goal);
-    } else if (options.metrictype == 3) {
+    } else if (options.metrictype == CN_SP_MT_CHEB) {
         return Chebyshev(cur, goal);
     }
     return 0;
@@ -60,39 +60,44 @@ double Search::Heuristic(Coordinates cur, Coordinates goal, const EnvironmentOpt
 
 std::optional<Node> Search::GetNeighbours(Node& v, int i, int j, const Map &map, const EnvironmentOptions &options)
 {
-    if (map.CellOnGridAndIsTraversable(v.i + i, v.j + j)) {
-        if (abs(i) - abs(j) == 0) {
-            if (options.allowdiagonal) {
-                bool f1 = map.CellOnGridAndIsTraversable(v.i, v.j + j);
-                bool f2 = map.CellOnGridAndIsTraversable(v.i + i, v.j);
-                if ((options.cutcorners && ((!f1 && !f2 && options.allowsqueeze) || (f1 && !f2) || (!f1 && f2))) || (f1 && f2)) {
-                    return Node
-                        { v.i + i
-                        , v.j + j, v.g + C_D + HeuristicWeight(options) * Heuristic({v.i + i, v.j + j}, map.getGoal(), options)
-                        , v.g + C_D
-                        , Heuristic({v.i + i, v.j + j}, map.getGoal(), options)
-                        , &v};
-                } 
-            }
-        } else {
-            return Node
-                        { v.i + i
-                        , v.j + j, v.g + C_HV + HeuristicWeight(options) * Heuristic({v.i + i, v.j + j}, map.getGoal(), options)
-                        , v.g + C_HV
-                        , Heuristic({v.i + i, v.j + j}, map.getGoal(), options)
-                        , &v};
-        }
+    if (!map.CellOnGrid(v.i + i, v.j + j) || map.CellIsObstacle(v.i + i, v.j + j)) {
+        return std::nullopt;
     }
-    return std::nullopt;
+    if (abs(i) - abs(j) == 0) {
+        if (!options.allowdiagonal) {
+            return std::nullopt;
+        } else if (!options.cutcorners) {
+            if (map.CellIsObstacle(v.i, v.j + j) || map.CellIsObstacle(v.i + i, v.j)) {
+                return std::nullopt;
+            }
+        } else if (!options.allowsqueeze) {
+            if (map.CellIsObstacle(v.i, v.j + j) && map.CellIsObstacle(v.i + i, v.j)) {
+                return std::nullopt;
+            }
+        }
+        return Node
+                { v.i + i
+                , v.j + j
+                , v.g + C_D + HeuristicWeight(options) * Heuristic({v.i + i, v.j + j}, map.getGoal(), options)
+                , v.g + C_D
+                , Heuristic({v.i + i, v.j + j}, map.getGoal(), options)
+                , &v};
+    }
+    return Node
+                { v.i + i
+                , v.j + j
+                , v.g + C_HV + HeuristicWeight(options) * Heuristic({v.i + i, v.j + j}, map.getGoal(), options)
+                , v.g + C_HV
+                , Heuristic({v.i + i, v.j + j}, map.getGoal(), options)
+                , &v};
 }
 
 SearchResult Search::startSearch(ILogger *Logger, const Map &map, const EnvironmentOptions &options)
 {
     auto time = std::chrono::steady_clock::now();
 
-    Coordinates start = map.getStart();
-    Coordinates goal = map.getGoal();
-    int height = map.getMapHeight();
+    const Coordinates start = map.getStart();
+    const Coordinates goal = map.getGoal();
 
     size_t cntSt = 0;
 
@@ -100,6 +105,7 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
     
     open.clear();
     close.clear();
+    auxiliary_map.clear();
 
     open.insert(Node
         ( start.i
@@ -110,16 +116,15 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
         , nullptr)
     );
 
-    auxiliary_map[start.i * height + start.j] = open.begin();
+    auxiliary_map[{start.i, start.j}] = open.begin();
 
     while (!open.empty()) {
         ++cntSt;
-        auto l = open.begin();
-        close[l->i * height + l->j] = *l;
-        int inI = l->i, inJ = l->j;
-        open.erase(l);
-        auxiliary_map.erase(inI * height + inJ);
-        auto v = &close[inI * height + inJ];
+        auto l = *open.begin();
+        open.erase(open.begin());
+        auxiliary_map.erase({l.i, l.j});
+        close[{l.i, l.j}] = l;
+        auto v = &close[{l.i, l.j}];
         if (v->i == goal.i && v->j == goal.j) {
             searchedGoal = v;
             break;
@@ -127,17 +132,17 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
         for (int i = -1; i <= 1; ++i) {
             for (int j = -1; j <= 1; ++j) {
                 if (i == 0 && j == 0) continue;
-                if (auto neighbour = GetNeighbours(close[v->i * height + v->j], i, j, map, options)) {
-                    if (close.find(neighbour->i * height + neighbour->j) == close.end()) {
-                        auto it = auxiliary_map.find(neighbour->i * height + neighbour->j);
+                if (auto neighbour = GetNeighbours(*v, i, j, map, options)) {
+                    if (close.find({neighbour->i, neighbour->j}) == close.end()) {
+                        auto it = auxiliary_map.find({neighbour->i, neighbour->j});
                         if (it != auxiliary_map.end() && it->second->g > neighbour->g) {
                             open.erase(it->second);
                             auto new_it = open.insert(neighbour.value());
                             auxiliary_map.erase(it);
-                            auxiliary_map[neighbour->i * height + neighbour->j] = new_it.first;
+                            auxiliary_map[{neighbour->i, neighbour->j}] = new_it.first;
                         } else if (it == auxiliary_map.end()) {
                             auto new_it = open.insert(neighbour.value());
-                            auxiliary_map[neighbour->i * height + neighbour->j] = new_it.first;
+                            auxiliary_map[{neighbour->i, neighbour->j}] = new_it.first;
                         }
                     }
                 }

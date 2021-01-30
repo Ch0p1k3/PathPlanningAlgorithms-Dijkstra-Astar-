@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/bin/Debug/Ivan_Luchsh_ASearch.exe",
-            "args": ["./Examples/example.xml"],
+            "args": ["./Tests/3906263.xml"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
