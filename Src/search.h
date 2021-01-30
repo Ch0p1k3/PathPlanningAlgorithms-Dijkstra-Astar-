@@ -32,7 +32,7 @@ class Search
             <typename T1, typename T2>
             size_t operator()(const std::pair<T1, T2>& e) const
             {
-                return ((e.first + e.second) * (e.first + e.second + 1) / 2 + e.second);
+                return ((long long)(e.first + e.second) * (long long)(e.first + e.second + 1) / 2 + e.second);
             }
         };
 
