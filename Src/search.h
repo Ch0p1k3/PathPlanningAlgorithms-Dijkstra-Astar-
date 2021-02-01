@@ -24,21 +24,8 @@ class Search
         SearchResult startSearch(ILogger *Logger, const Map &Map, const EnvironmentOptions &options);
 
     protected:
-        SearchResult                    sresult; //This will store the search result
-        std::list<Node>                 lppath, hppath; //
-
-        struct HashP {
-            template 
-            <typename T1, typename T2>
-            size_t operator()(const std::pair<T1, T2>& e) const
-            {
-                return ((long long)(e.first + e.second) * (long long)(e.first + e.second + 1) / 2 + e.second);
-            }
-        };
-
-        std::unordered_map<std::pair<int, int>, Node, HashP> close;
-        std::set<Node> open;
-        std::unordered_map<std::pair<int, int>, std::set<Node>::iterator, HashP> auxiliary_map;
+        SearchResult                    sresult;
+        std::list<Node>                 lppath, hppath;
 
         double Heuristic(Coordinates, Coordinates, const EnvironmentOptions &) const;
 

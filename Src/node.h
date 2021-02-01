@@ -27,11 +27,6 @@ struct Node
     , g(ng)
     , H(nH)
     , parent(nparent) {}
-
-    bool operator<(const Node& other) const
-    {
-        return std::tie(F, g, other.i, other.j) < std::tie(other.F, other.g, i, j);
-    }
 };
 
 #endif

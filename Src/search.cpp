@@ -1,13 +1,10 @@
 #include "search.h"
 
 #define PI_CONSTANT 3.14159265359
-#define C_D std::sqrt(2.)
+#define C_D CN_SQRT_TWO
 #define C_HV 1
 
-Search::Search()
-{
-//set defaults here
-}
+Search::Search() {}
 
 Search::~Search() {}
 
@@ -46,16 +43,19 @@ double Search::HeuristicWeight(const EnvironmentOptions &options) const
 
 double Search::Heuristic(Coordinates cur, Coordinates goal, const EnvironmentOptions &options) const
 {
-    if (options.metrictype == CN_SP_MT_DIAG) {
-        return Diagonal(cur, goal);
-    } else if (options.metrictype == CN_SP_MT_MANH) {
-        return Manhattan(cur, goal);
-    } else if (options.metrictype == CN_SP_MT_EUCL) {
-        return Euclidean(cur, goal);
-    } else if (options.metrictype == CN_SP_MT_CHEB) {
-        return Chebyshev(cur, goal);
+    if (options.searchtype == CN_SP_ST_DIJK) {
+        return 0;
+    } else if (options.searchtype == CN_SP_ST_ASTAR) {
+        if (options.metrictype == CN_SP_MT_DIAG) {
+            return Diagonal(cur, goal);
+        } else if (options.metrictype == CN_SP_MT_MANH) {
+            return Manhattan(cur, goal);
+        } else if (options.metrictype == CN_SP_MT_EUCL) {
+            return Euclidean(cur, goal);
+        } else if (options.metrictype == CN_SP_MT_CHEB) {
+            return Chebyshev(cur, goal);
+        }
     }
-    return 0;
 }
 
 std::optional<Node> Search::GetNeighbours(Node& v, int i, int j, const Map &map, const EnvironmentOptions &options)
@@ -94,6 +94,24 @@ std::optional<Node> Search::GetNeighbours(Node& v, int i, int j, const Map &map,
 
 SearchResult Search::startSearch(ILogger *Logger, const Map &map, const EnvironmentOptions &options)
 {
+    struct hashPair {
+        size_t operator()(const std::pair<int, int>& e) const
+        {
+            return ((size_t)(e.first + e.second) * (e.first + e.second + 1) / 2 + e.second);
+        }
+    };
+
+    auto cmpForOpen = [&options](const Node& left, const Node& right) {
+        if (options.breakingties == CN_SP_BT_GMIN) {
+            return std::tie(left.F, right.g, left.i, left.j) < std::tie(right.F, left.g, right.i, right.j);
+        }
+        return std::tie(left.F, left.g, left.i, left.j) < std::tie(right.F, right.g, right.i, right.j);
+    };
+
+    std::unordered_map<std::pair<int, int>, Node, hashPair> close;
+    std::set<Node, decltype(cmpForOpen)> open(cmpForOpen);
+    std::unordered_map<std::pair<int, int>, std::set<Node>::iterator, hashPair> auxiliary_map;
+
     auto time = std::chrono::steady_clock::now();
 
     const Coordinates start = map.getStart();

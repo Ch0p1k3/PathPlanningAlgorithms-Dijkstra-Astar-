@@ -10,7 +10,7 @@ EnvironmentOptions::EnvironmentOptions()
     breakingties = 1;
 }
 
-EnvironmentOptions::EnvironmentOptions(bool AS, bool AD, bool CC, int MT, double HW, int BT)
+EnvironmentOptions::EnvironmentOptions(bool AS, bool AD, bool CC, int MT, double HW, int BT, int ST)
 {
     metrictype = MT;
     allowsqueeze = AS;
@@ -18,5 +18,6 @@ EnvironmentOptions::EnvironmentOptions(bool AS, bool AD, bool CC, int MT, double
     cutcorners = CC;
     hweight = HW;
     breakingties = BT;
+    searchtype = ST;
 }
 

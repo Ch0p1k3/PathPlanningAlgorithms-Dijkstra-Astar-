@@ -59,15 +59,9 @@ Input file should contain:
 
 To build and run the project you should have compiler on C++17 standart.
 
-The project can be build in two ways:
-- Using QtCreator and qmake;
-- Using CMake;
+The project should be built with CMake;
 
-When using QtCreator, you need to open the file `ASearch.pro` which is located in the directory` .../PathPlanningProject/Src/ `and set up the project with the required assembly kit.
-
-After selecting a project, you need to set the input file name as a command line argument. Use the file `.../ PathPlanningProject/Examples/example.xml` as a first example. To set command line arguments, go to the project launch settings and enter the desired file path in the "Command line parameters" field.
-
-When using CMake, building and launching can be done both from the command line and using various IDEs. Below are the build and run scripts using the command line.
+Building and launching can be done both from the command line and using various IDEs. Below are the build and run scripts using the command line.
 
 ### Linux and Mac
 Release building:
@@ -115,16 +109,6 @@ Launching:
 ```cmd
 cd Bin/{Debug|Release}/
 Ivan_Luchsh_ASearch.exe ../../Examples/example.xml
-```
- 
-Tests are run from the directory `.../PathPlanningAlgorithms` using the command:
-```
-ctest -C {Debug|Release}
-```
-
-For more detailed output:
-```
-ctest -C {Debug|Release} --output-on-failure
 ```
 
 ## Mentors
