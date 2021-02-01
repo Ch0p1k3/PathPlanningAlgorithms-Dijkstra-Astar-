@@ -39,21 +39,21 @@ Input file should contain:
     * "allowsqueeze" - it is allowed to walk diagonally if there are obstacles on both sides. Also true or false.
     ![steps](./Images/steps.png)
   * Tag "options". It is options for the output.
-    * "loglevel" - the value of the output. There are "0.5" and "1". "1" is more verbose output.
-    * "logpath" - the path of the output.
-    * "logfilename" - the name of the output file.
+    * "loglevel" - value of the output. There are "0.5" and "1". "1" is more verbose output.
+    * "logpath" - output file directory.
+    * "logfilename" - name of the output file.
     
 ### Output files
 * "log" - output
   * An important tag is "summary". His attributes:
-    * "numberofsteps" - the number of steps of the algorithm.
+    * "numberofsteps" - the number of algorithm steps.
     * "nodescreated" - the number of nodes created during the search.
     * "length" - the path length.
     * "length_scaled" = "length" * "cellsize"
     * "time" - running time of the algorithm.
-  * "path" - the map of the output(only for 1 "loglevel").
-  * "lplevel" - the path of the coordinates.
-  * "hplevel" - the short path of the coordinates.
+  * "path" - the map with the path(only for 1 "loglevel").
+  * "lplevel" - the path coordinates.
+  * "hplevel" - the short path coordinates.
 
 ## Getting started
 
