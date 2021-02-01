@@ -112,8 +112,6 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
     std::set<Node, decltype(cmpForOpen)> open(cmpForOpen);
     std::unordered_map<std::pair<int, int>, std::set<Node>::iterator, hashPair> auxiliary_map;
 
-    auto time = std::chrono::steady_clock::now();
-
     const Coordinates start = map.getStart();
     const Coordinates goal = map.getGoal();
 
@@ -124,6 +122,8 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
     open.clear();
     close.clear();
     auxiliary_map.clear();
+
+    auto time = std::chrono::steady_clock::now();
 
     open.insert(Node
         ( start.i
