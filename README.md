@@ -62,12 +62,10 @@ To build and run the project you should have compiler on C++17 standart.
 The project can be build in two ways:
 - Using QtCreator and qmake;
 - Using CMake;
+
 When using QtCreator, you need to open the file `ASearch.pro` which is located in the directory` .../PathPlanningProject/Src/ `and set up the project with the required assembly kit.
-![qt_open](./Images/qt1.png)
 
 After selecting a project, you need to set the input file name as a command line argument. Use the file `.../ PathPlanningProject/Examples/example.xml` as a first example. To set command line arguments, go to the project launch settings and enter the desired file path in the "Command line parameters" field.
-
-![qt_arg](./Images/qt2.png)
 
 When using CMake, building and launching can be done both from the command line and using various IDEs. Below are the build and run scripts using the command line.
 
