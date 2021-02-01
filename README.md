@@ -23,7 +23,7 @@ Input file should contain:
     * "starty" - the start coordinate y.
     * "finishx" - the finish coordinate x.
     * "finishy" - the finish coordinate y.
-    * Coordinates are non-negative. The top left corner has coordinates (0, 0). The first coordinate changes by rows, the second by columns.
+    * Coordinates are non-negative. The top left corner has coordinates (0, 0). The first coordinate is the index of row, the second coordinate is the index of column. 
     * Tag "grid" describes your map, where each line is separated by a "line" tag. "0" is free cell, "1" is obstruction.
   * Tag "algorithm" describes the algrithm options.
     * "searchtype" - the type of the search. Arguments are "dijkstra" or "astar". Dijkstra and A* algorithm, respectively.
