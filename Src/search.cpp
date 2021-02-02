@@ -102,10 +102,18 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
     };
 
     auto cmpForOpen = [&options](const Node& left, const Node& right) {
-        if (options.breakingties == CN_SP_BT_GMIN) {
-            return std::tie(left.F, right.g, left.i, left.j) < std::tie(right.F, left.g, right.i, right.j);
+        if (left.F == right.F) {
+            if (left.g == right.g) {
+                return std::tie(left.i, left.j) < std::tie(right.i, right.j);
+            } else {
+                if (options.breakingties == CN_SP_BT_GMIN) {
+                    return left.g < right.g;
+                } else {
+                    return left.g > right.g;
+                }
+            }
         }
-        return std::tie(left.F, left.g, left.i, left.j) < std::tie(right.F, right.g, right.i, right.j);
+        return left.F < right.F;
     };
 
     std::unordered_map<std::pair<int, int>, Node, hashPair> close;
