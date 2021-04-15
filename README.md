@@ -6,7 +6,7 @@ A software project at the Higher School of Economics. Finding the shortest paths
 Download current repository to your local machine. Use
 
 ```
-git clone https://github.com/Ch0p1k3/PathPlanningAlgorithms
+git clone https://github.com/Ch0p1k3/PathPlanningAlgorithms-Dijkstra-Astar-
 ```
 
 ## Input and output
