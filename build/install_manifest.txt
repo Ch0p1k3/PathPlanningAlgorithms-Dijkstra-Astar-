@@ -1,1 +1,0 @@
-D:/Projects/PathPlanningAlgorithms-Dijkstra-Astar-/Bin/Release/Ivan_Luchsh_ASearch.exe
